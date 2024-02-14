@@ -4,12 +4,18 @@ header{
     right: 0;
     left: 0;
     height: 80px;
-    background-color: #1f2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
+    background-color: #f7f9fb;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.logo a{
+    font-style: italic;
+    font-size: 24px;
 }
 
 .header-right {
@@ -17,7 +23,7 @@ header{
     gap: 20px;
 }
 
-.header-left ul {
+ul {
     display: flex;
     gap: 16px;
     list-style: none;
@@ -26,10 +32,33 @@ header{
 a {
     text-decoration: none;
     font-weight: 600;
-    color: #e5e7eb;
+    padding: 15px;
+    color: #1f2937;
     font-size: 20px;
+    border-radius: 10px;
+    transition: 400ms;
 }
 
-.current-profile {
-    border-radius: 50%;
+ul a:hover {
+    background-color: #1f2937;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.login {
+    background-color: #1f2937;
+    border: 1px solid #1f2937;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: white;
+    color: #1f2937;
+    border: 1px solid #1f2937;
 }

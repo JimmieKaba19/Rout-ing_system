@@ -1,5 +1,6 @@
 .body-content {
     display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -8,22 +9,153 @@
     padding: 32px 50px;
     justify-content: center;
     align-items: center;
-    background-color: #1f2937;
-    border: 1px solid wheat;
+    background-color: #f9faf8;
+}
+
+.hero-left, .hero-right {
+    padding: 32px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 0;
 }
 
 .hero-left h1{
     font-size: 48px;
     font-weight: 900;
-    color: #f9faf8;
+    color: #1f2937;
     width: 600px;
+}
+
+.hero-section span {
+    color: #166466;
 }
 
 .hero-left p {
     font-size: 18px;
-    color: #e5e7eb;
+    color: #1f2937;
+    width: 600px;
+}
+
+.hero-btn {
+    padding: 16px 32px;
+    font-size: 18px;
+    border: 2px solid #166466;
+    border-radius: 10px;
+    color: #f9faf8;
+    background-color: #166466;
+    transition: 400ms;
+    animation: ease-in;
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+    color: #166466;
+    border: 2px solid #3882f6;
 }
 
 .hero-image {
     border-radius: 10px;
+    width: 800px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.steps-section {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 50px;
+}
+
+.steps-content {
+    display: flex;
+    gap: 20px;
+}
+
+.steps-section h1 {
+    text-align: center;
+    color: #1f2937;
+}
+
+.step {
+    background-color: #166466;
+    color: #f9faf8;
+    padding: 20px;
+}
+
+.step, h4, p{
+    margin: 10px;
+}
+
+.step, p{
+    font-size: 16px;
+}
+
+.step.select {
+    background-color: #1f2937;
+}
+
+.step.pay {
+    background-color: #3882f6;
+}
+
+.step.pick {
+    background: #f9faf8;
+    color: #1f2937;
+}
+
+.destination-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9faf8;
+}
+
+.sub-title {
+    text-align: center;
+    color: #1f2937;
+}
+
+.sub-destination-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 50px;
+}
+
+.sub-article {
+    position: relative;
+}
+
+.article-image {
+    width: 100%;
+}
+
+.article-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #f9faf8;
+}
+
+
+.sub-right-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    border: 1px solid #1f2937;
+}
+
+.destination-form {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
