@@ -7,12 +7,5 @@ body {
     flex-direction: column;
 }
 
-footer {
-    background-color: #1f2937;
-    color: #e5e7eb;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-
+/* Remember to create the state te color codes as har coded elements and call them to the styling as "--color-bg, --text-color etc" */
 
