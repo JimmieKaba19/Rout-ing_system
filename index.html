@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <script src="JS/script.js" defer></script>
     <title>Rout-ing || Home</title>
 </head>
 <body>
@@ -203,49 +204,104 @@
                     <h2 class="left-title">Get in touch</h2>
                     <p class="contact-info">Need to get in touch with us? Either fill our the form with your enquiry or use the methods below.</p>
                     <div class="contact-articles">
-
-                    </div>
-                    <div class="contact-articles">
-
-                    </div>
-                    <div class="contact-articles">
-
-                    </div>
-                    <div class="contact-articles">
-
+                        <div class="contact-article">
+                            <div class="cArticle-icon">
+                                <img src="Images/live-chat.png" alt="live chat icon" class="c-icon">
+                            </div>
+                            <div class="cArticle-title">
+                                <h3 class="c-title">Live Chat</h3>
+                            </div>
+                            <div class="cArticle-info">
+                                <p class="c-info">
+                                    <a href="#" class="c-info-link"> Chat with us</a> during operating hours.
+                                </p>
+                            </div>                        
+                        </div>
+                        <div class="contact-article">
+                            <div class="cArticle-icon">
+                                <img src="Images/phone.png" alt="phone icon" class="c-icon">
+                            </div>
+                            <div class="cArticle-title">
+                                <h3 class="c-title">Phone</h3>
+                            </div>
+                            <div class="cArticle-info">
+                                <p class="c-info">
+                                    Call us at <a href="tel:+254700000000" class="c-info-link">(+254) 700 000 000</a> if you want to talk.
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="contact-article">
+                            <div class="cArticle-icon">
+                                <img src="Images/sms-texts.png" alt="sms text icon" class="c-icon">
+                            </div>
+                            <div class="cArticle-title">
+                                <h3 class="c-title">SMS Text</h3>
+                            </div>
+                            <div class="cArticle-info">
+                                <p class="c-info">
+                                    Text us at <a href="tel:+254700000000" class="c-info-link">(+254) 700 000 000</a>
+                                    and we will text you back during business hours.
+                                </p>
+                            </div>  
+                        </div>
+                        <div class="contact-article">
+                            <div class="cArticle-icon">
+                                <img src="Images/location.png" alt="location icon" class="c-icon">
+                            </div>
+                            <div class="cArticle-title">
+                                <h3 class="c-title">Our Location</h3>
+                            </div>
+                            <div class="cArticle-info">
+                                <p class="c-info">
+                                    Want to find us we set shop in <a href="#" class="c-info-link">Nanyuki</a>.
+                                </p>
+                            </div>  
+                        </div>
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form action="" method="post">
-                        <div class="name-labels">
-                            <label for="f-name" class="f-name">
-                                First name
-                            </label>
-                            <label for="s-name" class="s-name">
-                                Second name
-                            </label>
-                        </div>
-                        <div class="input-fields">
-                            <input type="text" name="fname" id="" class="first-name" placeholder="John">
-                            <input type="text" name="sname" id="" class="second-name" placeholder="Doe">
-                        </div>
-
-                        <div class="contact-details">
-                            <label for="county">County</label>
-                            <input type="text" name="" id="" class="county" placeholder="nairobi">
-                            <label for="email">Email</label>
-                            <input type="email" name="" id="" class="email" placeholder="johndoe@gmail.com">
-                            <label for="phone">Phone number</label>
-                            <input type="tel" name="" id="" class="phone-no" placeholder="(+254) 700 000 000">
-                            <label for="text">What can we help you with? </label>
-                            <textarea name="textarea" id="" cols="30" rows="5" placeholder="more info"></textarea>
-                        </div>
-                        <div class="form-btn">
-                        <button 
-                        type="submit"
-                        class="form-submit">Submit</button>
-                        </div>
-                    </form>
+                    <div class="contact-bform">
+                        <p class="contact-form-info">
+                            What do you have in mind?
+                        </p>
+                        <button type="button" class="open-form">
+                            Open Form
+                        </button>
+                    </div>
+                    <div class="form-section">
+                        <form action="" method="post">
+                            <div class="close">
+                                <img src="Images/close.png" alt="close form image" class="close-form" title="Close form">
+                            </div>
+                            <div class="name-labels">
+                                <label for="f-name" class="f-name">
+                                    First name
+                                </label>
+                                <label for="s-name" class="s-name">
+                                    Second name
+                                </label>
+                            </div>
+                            <div class="input-fields">
+                                <input type="text" name="fname" id="" class="first-name" placeholder="John">
+                                <input type="text" name="sname" id="" class="second-name" placeholder="Doe">
+                            </div>
+                            <div class="contact-details">
+                                <label for="county">County</label>
+                                <input type="text" name="" id="" class="county" placeholder="nairobi">
+                                <label for="email">Email</label>
+                                <input type="email" name="" id="" class="email" placeholder="johndoe@gmail.com">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" name="" id="" class="phone-no" placeholder="(+254) 700 000 000">
+                                <label for="text">What can we help you with? </label>
+                                <textarea name="textarea" id="" cols="30" rows="5" placeholder="more info"></textarea>
+                            </div>
+                            <div class="form-btn">
+                            <button 
+                            type="submit"
+                            class="form-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
