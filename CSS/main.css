@@ -227,7 +227,7 @@
 }
 
 .about-left {
-    padding: 20px 50px;
+    padding: 0 50px;
 }
 
 .about-left h2 {
@@ -281,23 +281,24 @@
     font-weight: 500;
 }
 
-.contact-section {
+.faqs-section {
     background-color: #f9faf8;
+}
+
+.contact-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 36px 50px;
+    padding: 30px 50px;
 }
 
 .contact-content {
-    border: 1px solid blue;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 .contact-title{
@@ -306,9 +307,11 @@
 }
 
 .contact-left {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 30px;
+    /* justify-content: center; */
+    /* padding: 30px; */
 }
 
 .left-title {
@@ -321,23 +324,102 @@
     text-wrap: wrap;
 }
 
-.contact-articles {
+.contact-articles{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-article {
     margin-top: 32px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px;
+    padding: 15px;
     border-radius: 10px;
     width: 200px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+.cArticle-icon, .c-icon {
+    width: 50px;
+}
+
+.c-title {
+    font: 16px;
+    margin: 0;
+    margin-top: 4px;
+    color: #1f2937;
+}
+
+.c-info {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 4px;
+    line-height: 20px;
+}
+
+.c-info-link{
+    font-size: 14px;
+    text-decoration: underline;
+    transition: 400ms;
+    margin: 0;
+    padding: 0;
+}
+
+.c-info-link:hover{
+    color: #3882f6;
+}
+
 .contact-right {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-bform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-info {
+    font-size: 18px;
+    color: #1f2937;
+    margin: 0;
+}
+
+.open-form {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    transition: 400ms;
+}
+
+.form-section{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    display: none;
+}
+
+.close, .close-form {
+    margin-bottom: 5px;
+    width: 40px;
+    border-radius: 50%;
 }
 
 .name-labels {
