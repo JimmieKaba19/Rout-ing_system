@@ -18,7 +18,8 @@
     <header>
         <div class="header-left">
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Home</a></li>
             </ul>
         </div>
@@ -28,9 +29,9 @@
         </div>
         <div class="header-right">
             <ul>
-                <li><a href="#">Contact</a></li>
+                <li><a href="form.html">Login/Signup</a></li>
+                <li><a href="booked.html">Check my booking</a></li>
             </ul>
-            <button class="login">Login</button>
         </div>
     </header>
 
@@ -42,12 +43,17 @@
                     Charter with us for a safe <span>adventure</span> filled Journey. 
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nemo saepe reiciendis dolore alias doloremque pariatur consequatur consequuntur impedit rerum.
                 </p>
-                <button class="hero-btn">
+                <a href="booking.html" class="hero-btn">
                     Get Your Ticket
-                </button>
+                </a>
             </div>
             <div class="hero-right">
-                <img src="Images/_1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpeg" alt="" class="hero-image">
+                <!-- <img src="Images/_1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpeg" alt="" class="hero-image"> -->
+                <div class="book-form">
+                    <form action="booking.html" method="get">
+
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -129,34 +135,34 @@
             </div>
         </div>
 
-        <div class="about-section">
+        <div class="about-section" id="about">
             <div class="about-content">
                 <h1>About US</h1>
-                <p><span>Rout-Ing</span> is a system dedicated to bring public transport to the convinience of commuters,we partner with many Commuter saccos and parcel delivery agencies allowing you to book your favourite seat in your favorite sacco from the convinience of your mobile phone in the comfort of your home. Monitor your parcel in transit and get the best unbeatable prices without worry of fraud</p>
+                <p style="text-align: center;"><span>Rout-Ing</span> is a system dedicated to bring public transport to the convinience of commuters,we partner with many Commuter saccos and parcel delivery agencies allowing you to book your favourite seat on your desired sacco conviniently. Monitor your parcel in transit and get the best unbeatable prices.</p>
                 <div class="about-stats">
                     <div class="stat-content even-last">
                         <div class="sub-stat">
                             <img src="Images/partner-saccos.png" alt="statistic image" class="stat-img">
-                            <p>20+ Partner Saccos</p>
+                            <p>6+ Partner Saccos</p>
                         </div>
                     </div>
                     <div class="stat-content odd">
                         <img src="Images/passengers.png" alt="statistic image" class="stat-img">
-                        <p> 5000+ Passengers commutted</p>
+                        <p> 500+ Passengers commutted</p>
                     </div>
                     <div class="stat-content even">
                         <img src="Images/parcels.png" alt="statistic image" class="stat-img">
-                        <p>2000+ Parcels Delivered</p>
+                        <p>200+ Parcels Delivered</p>
                     </div>
                     <div class="stat-content">
                         <img src="Images/awards.png" alt="statistic image" class="stat-img">
-                        <p>25+ Awards won with us</p>
+                        <p>5+ Awards won with us</p>
                     </div>
                 </div>
                 <div class="sub-contents">
                     <div class="about-left">
                         <h2>Why your choice is us</h2>
-                        <p>We collaborate with different travel comanies to give you the best travel experience and the best price</p>
+                        <p>We collaborate with different travel companies to give you the best travel experience and the best price</p>
                         <div class="left-sub-section">
                             <div class="sub-content">
                                 <div class="sub-image odd">
@@ -194,10 +200,104 @@
             </div>
         </div>
 
-        <div class="faqs-section">
-            this is the frequently asked questions
+        <div class="faqs-section" id="faqs">
+            <h1 class="faqs-title">
+                Frequently Asked Questions
+            </h1>            
+            <div class="faqs-content">
+                <div class="faqs-sub-content">
+                    <h2 class="sub-content-title booking" id="booking">
+                        Booking
+                    </h2>
+                    <div class="sub-faqs" id="sub-booking">
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span> How to check my successful booking?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span>
+                                Once your booking is successful, you can able to check your booking at Check My Booking page. If you have member account, then check your booking history under member area - History.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span> Can I change my booking?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span> You can send an email to sales@busonlineticket.com to request for the change of booking. Change request must be sent to us at least 7 days before the schedule departure time and the request is subjected to the operator’s approval.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span> Can I cancel my booking?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span> Cancellation and Refund Policy may differ for each operator. If applicable, cancellation and refund request can be done via BusOnlineTicket.com Member Panel. Just log in to your member account and Manage your booking. You will see an option to Cancel your booking if the booking is cancellable.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span> Is my booking ticket transferable?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span> 
+                                Yes, you just need to print out the e-receipt and anyone with the e-receipt can collect from the counter.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span> I have lost my e-confirmation, can I 
+                                collect my ticket without e-confirmation?</h4>
+
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span> 
+                                You may email to us and our customer service team will email you the e-confirmation within 24hours. Alternatively, for some bus company ONLY, if you are the person who bought the ticket, kindly show the counter staff your registered passport number / telephone / Identity Card. The counter will issue the ticket to you.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span> I do not have a printer. Is it a must 
+                                to take the printout of the ticket?</h4>
+
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span> 
+                                NO. It is compulsory to print out the e-confirmation of the booking. For some bus company, printed e-confirmation is optional as long as you could provide the booking reference number. Kindly refer to the notes during your booking and the notes inside the e-confirmation email. You also need to present your ID or the booking reference number to get the boarding pass.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faqs-sub-content">
+                    <h2 class="sub-content-title member" id="member">
+                        Member
+                    </h2>
+                    <div class="sub-faqs" id="sub-member">
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span>Can I apply for a membership?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span>Yes.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span>How can I register as a member?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span>Please go to home page of www.busonlinticket.com and click “Sign Up Here” or click the link here</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span>Can I edit my contact number?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span>Yes, you can edit your member profile after login.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span>Can I change my password?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span>Yes, you can change your password under member profile.</p>
+                        </div>
+                        <div class="sub-faqs-top">
+                            <h4><span>Q</span>I forget my password, how?</h4>
+                        </div>
+                        <div class="sub-faqs-bottom">
+                            <p><span>A</span>You can retrieve your password by entering your registered email address here.</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-section">
+
+        <div class="contact-section" id="contact">
             <h1 class="contact-title">Contact us</h1>
             <div class="contact-content">
                 <div class="contact-left">
@@ -226,7 +326,7 @@
                             </div>
                             <div class="cArticle-info">
                                 <p class="c-info">
-                                    Call us at <a href="tel:+254700000000" class="c-info-link">(+254) 700 000 000</a> if you want to talk.
+                                    Call us at <a href="tel:+254700000000" class="c-info-link">(+254) 700 000 000</a> for more information
                                 </p>
                             </div>  
                         </div>
@@ -235,12 +335,12 @@
                                 <img src="Images/sms-texts.png" alt="sms text icon" class="c-icon">
                             </div>
                             <div class="cArticle-title">
-                                <h3 class="c-title">SMS Text</h3>
+                                <h3 class="c-title">Email</h3>
                             </div>
                             <div class="cArticle-info">
                                 <p class="c-info">
-                                    Text us at <a href="tel:+254700000000" class="c-info-link">(+254) 700 000 000</a>
-                                    and we will text you back during business hours.
+                                    <a href="mail:routinginfo@gmail.com" class="c-info-link">routinginfo@gmail.com</a>
+                                    and we will get back to you back during business hours.
                                 </p>
                             </div>  
                         </div>
@@ -253,7 +353,7 @@
                             </div>
                             <div class="cArticle-info">
                                 <p class="c-info">
-                                    Want to find us we set shop in <a href="#" class="c-info-link">Nanyuki</a>.
+                                    We are located at <a href="#" class="c-info-link">Nanyuki</a>.
                                 </p>
                             </div>  
                         </div>
@@ -292,7 +392,7 @@
                                 <input type="email" name="" id="" class="email" placeholder="johndoe@gmail.com">
                                 <label for="phone">Phone number</label>
                                 <input type="tel" name="" id="" class="phone-no" placeholder="(+254) 700 000 000">
-                                <label for="text">What can we help you with? </label>
+                                <label for="text">How can we be of assistance? </label>
                                 <textarea name="textarea" id="" cols="30" rows="5" placeholder="more info"></textarea>
                             </div>
                             <div class="form-btn">
@@ -308,8 +408,46 @@
     </main>
 
     <footer>
+        <div class="footer-more">
+            <div class="more-subs">
+                <div class="subs-logo">
+                    <img src="Images/_337a0b08-c3e3-40a1-95f6-a3afe7c619af.jpeg" alt="" class="logo-img">
+                </div>
+                <div class="footer-logo">
+                    <a href="#"> <h2 class="footer-title">Rout-Ing</h2> </a>
+                </div>
+            </div>
+            <div class="more-subs">
+                <div class="subs-links">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="more-subs">
+                <div class="sacco">
+                    <ul>
+                        <li><a href="#">2NK Sacco</a></li>
+                        <li><a href="#">Menany Sacco</a></li>
+                        <li><a href="#">Nanyuki Cabs</a></li>
+                        <li><a href="#">4N.T.E Sacco</a></li>
+                        <li><a href="#">Nyakati Sacco</a></li>
+                        <li><a href="#">Prestige Cabs</a></li>
+                    </ul>
+                   
+                </div>
+            </div>
+            <div class="more-subs">
+                <div class="f-button">
+                    <button type="button" class="footer-login">Login</button>
+                </div>
+            </div>
+        </div>
         <div class="footer-text">
-            Copyright Kaba Inc &#064; 2024 all rights reserved <i>Inspiration from Mi Vida</i>
+            Copyright Kaba Inc &#064; 2024 all rights reserved. <i>Inspiration from Mi Vida</i>
         </div>
     </footer>
 </body>
