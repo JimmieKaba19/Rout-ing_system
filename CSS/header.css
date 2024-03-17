@@ -34,16 +34,16 @@ a {
     font-weight: 600;
     padding: 15px;
     color: #1f2937;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     transition: 400ms;
 }
 
 ul a:hover {
-    background-color: #1f2937;
-    color: white;
+    /* background-color: #1f2937; */
+    color: #3882f6;
     padding: 15px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .login {

@@ -95,11 +95,34 @@ footer {
     border: 1px solid #f9faf8;
 }
 
+.foot-main {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-top: 2px solid #f9faf8;
+}
+
+.foot {
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
 .footer-text {
-    font-size: 16px;
-    font-style: italic;
+    font-size: 14px;
+}
+
+.footer-link {
+    font-size: 14px;
+    display: flex;
+    color: #e5e7eb;
+    transition: 400ms;
+}
+
+.footer-link:hover {
+    color: #3882f6;
 }
 
 .footer-text i {
-    font-size: 14px;
+    font-size: 12px;
 }

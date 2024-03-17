@@ -66,11 +66,60 @@
     border: 2px solid #3882f6;
 }
 
-.hero-image {
-    border-radius: 10px;
-    width: 800px;
-    height: 700px;
-    object-fit: cover;
+.booking-form {
+    padding: 20px;
+    background-color: #f9faf8;
+    border-radius: 5px;
+}
+
+.form-contents {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.boundary {
+    border: 2px solid #166466;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-content label {
+    color: #1f2937;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.form-content label span{
+    color: #f9faf8;
+    font-size: 14px;
+}
+
+.form-content input {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #166466;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.form-content input[type="submit"] {
+    margin-top: 40px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 2px solid #3882f6;
+    transition: 400ms;
+}
+
+.form-content input[type="submit"]:hover {
+    background-color: transparent;
+    color: #3882f6;
 }
 
 .steps-section {
@@ -170,85 +219,60 @@
 }
 
 .about-section {
-    /* height: 100vh; */
-    background: url('../Images/background.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    /* opacity: 0.9; */
+    padding: 30px 50px;
 }
 
-.about-content {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 50px;
-}
-
-.about-content h1 {
+.about-section h1 {
     text-align: center;
     color: #166466;
     margin: 0;
 }
 
-.about-content p {
-    color: #f9faf8;
-    font-size: 18px;
-    font-weight: 400;
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
 }
 
-.about-content p span {
-    color: #3882f6;
-}
-
-.about-stats {
+.about-subs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+    padding: 10px 20px;
 }
 
-.stat-content {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 32px;
-    border-radius: 10px;
-    width: 200px;
-    background-color: #1f2937;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+.about-subs h3 {
+    color: #166466;
+    margin: 0;
 }
 
-.stat-content p {
-    color: #f9faf8;
-    text-align: center;
-}
-
-.stat-content.even {
-    background-color: #166466;
-}
-
-.stat-content.odd {
-    background-color: #3882f6;
-}
-
-.stat-content.even-last {
-    background-color: #f9faf8;
-}
-
-.stat-content.even-last p{
+.about-subs p{
+    font-size: 18px;
     color: #1f2937;
 }
 
-.stat-img {
-    width: 120px;
+.about-subs-img {
+    width: 400px;
+}
+
+.subs-sections {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .sub-contents {
     display: flex;
-    padding: 32px;
+    padding: 0 32px;
 }
 
 .about-left {
@@ -257,14 +281,13 @@
 
 .about-left h2 {
     text-align: center;
-    color: #f9faf8;
+    color: #1f2937;
 }
 
 .about-left p {
-    color: #f9faf8;
+    color: #1f2937;
     font-size: 18px;
     margin-bottom: 15px;
-    width: 800px;
 }
 
 .about-image {
@@ -296,7 +319,7 @@
 }
 
 .sub-info h4 {
-    color: #f9faf8;
+    color: #1f2937;
 }
 
 .sub-info h4 span {
@@ -306,15 +329,48 @@
 
 .sub-info p {
     font-size: 16px;
-    color: #f9faf8;
+    color: #1f2937;
     font-weight: 500;
+}
+
+.loyalty {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    justify-content: center;
+}
+
+.loyalty h3 {
+    color: #166466;
+    margin: 0;
+}
+
+.loyalty p {
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.loyalty-btn {
+    padding: 15px 30px;
+    background-color: #3882f6;
+    border: 2px solid #3882f6;
+    color: #f9faf8;
+    font-size: 20px;
+    border-radius: 10px;
+    align-self: center;
+    transition: 400ms;
+}
+
+.loyalty-btn:hover {
+    color: #3882f6;
+    background-color: transparent;
 }
 
 .faqs-section {
     background-color: #f9faf8;
     display: flex;
     flex-direction: column;
-    padding: 30px 50px;
+    padding: 10px 50px;
 }
 
 .faqs-title {
@@ -367,26 +423,15 @@
     margin-right: 3px;
 }
 
-.sub-faqs-bottom p span {
-    color: #f9faf8;
-    background-color: #166466;
-    border-radius: 50px;
-    padding: 3px 6px;
-    margin-right: 3px;
-}
-
-.faqs-title-close {
-    width: 30px;
-}
-
 .sub-faqs-bottom {
+    margin-top: 0px;
     background-color: #f9faf8;
     padding: 5px 10px;
     line-height: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
-    /* display: none; */
+    display: none;
 }
 
 .contact-section {
@@ -402,7 +447,6 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* padding: 0 30px; */
 }
 
 .contact-title{
@@ -614,4 +658,17 @@
 .form-submit:hover {
     color: #f9faf8;
     background-color: #166466;
+}
+
+.payment-modes {
+    background-color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.payment-mode {
+    width: 70px;
+
 }
