@@ -30,7 +30,7 @@
         <div class="header-right">
             <ul>
                 <li><a href="form.html">Login/Signup</a></li>
-                <li><a href="booked.html">Check my booking</a></li>
+                <li><a href="booked.html">My booking</a></li>
             </ul>
         </div>
     </header>
@@ -48,10 +48,28 @@
                 </a>
             </div>
             <div class="hero-right">
-                <!-- <img src="Images/_1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpeg" alt="" class="hero-image"> -->
-                <div class="book-form">
+                <div class="booking-form">
                     <form action="booking.html" method="get">
+                        <div class="form-contents">
+                            <div class="form-content">
+                                <label for="from">Leaving From:</label>
+                                <input type="text" class="from" name="from" placeholder="Departure">
+                                <label for="date">Travel Date:</label>
+                                <input type="date" class="date" name="date" placeholder="Travel Date">
+                                <label for="time">Time:</label>
+                                <input type="time" class="time" name="time" placeholder="time">
+                            </div>
+                            <div class="boundary">
 
+                            </div>
+                            <div class="form-content">
+                                <label for="to">Travelling To:</label>
+                                <input type="text" class="to" name="to" placeholder="Destination">
+                                <label for="date">Return Date: <span>(Optional)</span></label>
+                                <input type="date" class="date" name="date" placeholder="Return Date">
+                                <input type="submit" class="submit" value="Search">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -136,67 +154,79 @@
         </div>
 
         <div class="about-section" id="about">
+            <h1>About</h1>
             <div class="about-content">
-                <h1>About US</h1>
-                <p style="text-align: center;"><span>Rout-Ing</span> is a system dedicated to bring public transport to the convinience of commuters,we partner with many Commuter saccos and parcel delivery agencies allowing you to book your favourite seat on your desired sacco conviniently. Monitor your parcel in transit and get the best unbeatable prices.</p>
-                <div class="about-stats">
-                    <div class="stat-content even-last">
-                        <div class="sub-stat">
-                            <img src="Images/partner-saccos.png" alt="statistic image" class="stat-img">
-                            <p>6+ Partner Saccos</p>
-                        </div>
-                    </div>
-                    <div class="stat-content odd">
-                        <img src="Images/passengers.png" alt="statistic image" class="stat-img">
-                        <p> 500+ Passengers commutted</p>
-                    </div>
-                    <div class="stat-content even">
-                        <img src="Images/parcels.png" alt="statistic image" class="stat-img">
-                        <p>200+ Parcels Delivered</p>
-                    </div>
-                    <div class="stat-content">
-                        <img src="Images/awards.png" alt="statistic image" class="stat-img">
-                        <p>5+ Awards won with us</p>
-                    </div>
+                <div class="about-subs">
+                    <img src="Images/booking.avif" alt="about sub image" class="about-subs-img">
                 </div>
-                <div class="sub-contents">
-                    <div class="about-left">
-                        <h2>Why your choice is us</h2>
-                        <p>We collaborate with different travel companies to give you the best travel experience and the best price</p>
-                        <div class="left-sub-section">
-                            <div class="sub-content">
-                                <div class="sub-image odd">
-                                    <img src="Images/tickets.png" alt="content image" class="content-image">
-                                </div>
-                                <div class="sub-info">
-                                    <h4>Find your <span>Ticket</span></h4>
-                                    <p>Browse many travel agencies to get the best <span>ticket</span> that suits you</p>
-                                </div>
+                <div class="about-subs">
+                    <h3>Why Choose Bus Ticket Online?</h3>
+                    <p>
+                        One of the ultimate benefits when you book tickets online is you can book in advance from anywhere and whenever you want. This is especially useful for tourists and for those with difficulties to access the bus terminals. Instead, you can save the cost and time going to the stations and terminals to buy the tickets.
+                        
+                        We offer various secured payment options including e-wallet, credit cards, debit cards, internet banking, Alipay and many more for your convenience. Say no more long queues and avoid the eternity that is waiting for the vehicle to fill up and depart.</p>
+                        <div class="about-subs">
+                            <div class="subs-sections">
+                                <img src="Images/ticket-price.jpg" alt="about subs images" class="subs-sections-img">
+                                <p>Same as counter price</p>
                             </div>
-                            <div class="sub-content">
-                                <div class="sub-image">
-                                    <img src="Images/payment-process.png" alt="content image" class="content-image">
-                                </div>
-                                <div class="sub-info">
-                                    <h4>Easy <span>Payment</span> Process</h4>
-                                    <p>Our integrated payment system best suits you as it avoids hustles of fraud and missing payments</p>
-                                </div>
+                            <div class="subs-sections">
+                                <img src="Images/promotions.jpg" alt="about subs images" class="subs-sections-img">
+                                <p>Monthly promotions</p>
                             </div>
-                            <div class="sub-content">
-                                <div class="sub-image odd">
-                                    <img src="Images/trusted.png" alt="content image" class="content-image">
-                                </div>
-                                <div class="sub-info"> 
-                                    <h4>Trusted <span>Partner</span> Services</h4>
-                                    <p>We bring together your most <span>trusted</span> travel partners to offer the best services</p>
-                                </div>
+                            <div class="subs-sections">
+                                <img src="Images/reward.jpg" alt="about subs images" class="subs-sections-img">
+                                <p>Reward points</p>
+                            </div>
+                            <div class="subs-sections">
+                                <img src="Images/Help-Line.jpg" alt="about subs images" class="subs-sections-img">
+                                <p>Help line support and care</p>
                             </div>
                         </div>
+                </div>
+            </div>
+            <div class="sub-contents">
+                <div class="about-left">
+                    <h2>Why your choice is us</h2>
+                    <p>We collaborate with different travel companies to give you the best travel experience and the best price</p>
+                    <div class="left-sub-section">
+                        <div class="sub-content">
+                            <div class="sub-image odd">
+                                <img src="Images/tickets.png" alt="content image" class="content-image">
+                            </div>
+                            <div class="sub-info">
+                                <h4>Find your <span>Ticket</span></h4>
+                                <p>Browse many travel agencies to get the best <span>ticket</span> that suits you</p>
+                            </div>
+                        </div>
+                        <div class="sub-content">
+                            <div class="sub-image">
+                                <img src="Images/payment.png" alt="content image" class="content-image">
+                            </div>
+                            <div class="sub-info">
+                                <h4>Easy <span>Payment</span> Process</h4>
+                                <p>Our integrated payment system best suits you as it avoids hustles of fraud and missing payments</p>
+                            </div>
+                        </div>
+                        <div class="sub-content">
+                            <div class="sub-image odd">
+                                <img src="Images/trusted.png" alt="content image" class="content-image">
+                            </div>
+                            <div class="sub-info"> 
+                                <h4>Trusted <span>Partner</span> Services</h4>
+                                <p>We bring together your most <span>trusted</span> travel partners to offer the best services</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-right">
                     <img src="Images/travel-us.avif" alt="about image" class="about-image">
                 </div>
-                </div>
+            </div>
+            <div class="loyalty">
+                <h3>Join our Loyalty program</h3>
+                <p>Frequent traveler? We are happy to welcome you to join our Loyalty Program. With our Loyalty Program, you get to earn BOT Miles every time you book with us and redeem the points to cut off the price for your next purchase. Everyone can join our Loyalty Program. All you have to do is sign up and book bus tickets online, ETS train tickets and KTM online or make a ferry booking at BusOnlineTicket.com. Join our Loyalty Program for free and enjoy the extra benefits of online booking at BusOnlineTicket.com.</p>
+                <a href="loyalty.html" class="loyalty-btn">Join our program</a>
             </div>
         </div>
 
@@ -211,47 +241,46 @@
                     </h2>
                     <div class="sub-faqs" id="sub-booking">
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span> How to check my successful booking?</h4>
+                            <h4> How to check my successful booking?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span>
-                                Once your booking is successful, you can able to check your booking at Check My Booking page. If you have member account, then check your booking history under member area - History.</p>
+                            <p>Once your booking is successful, you can able to check your booking at Check My Booking page. If you have member account, then check your booking history under member area - History.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span> Can I change my booking?</h4>
+                            <h4> Can I change my booking?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span> You can send an email to sales@busonlineticket.com to request for the change of booking. Change request must be sent to us at least 7 days before the schedule departure time and the request is subjected to the operator’s approval.</p>
+                            <p> You can send an email to sales@busonlineticket.com to request for the change of booking. Change request must be sent to us at least 7 days before the schedule departure time and the request is subjected to the operator’s approval.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span> Can I cancel my booking?</h4>
+                            <h4> Can I cancel my booking?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span> Cancellation and Refund Policy may differ for each operator. If applicable, cancellation and refund request can be done via BusOnlineTicket.com Member Panel. Just log in to your member account and Manage your booking. You will see an option to Cancel your booking if the booking is cancellable.</p>
+                            <p> Cancellation and Refund Policy may differ for each operator. If applicable, cancellation and refund request can be done via BusOnlineTicket.com Member Panel. Just log in to your member account and Manage your booking. You will see an option to Cancel your booking if the booking is cancellable.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span> Is my booking ticket transferable?</h4>
+                            <h4> Is my booking ticket transferable?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span> 
+                            <p> 
                                 Yes, you just need to print out the e-receipt and anyone with the e-receipt can collect from the counter.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span> I have lost my e-confirmation, can I 
+                            <h4> I have lost my e-confirmation, can I 
                                 collect my ticket without e-confirmation?</h4>
 
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span> 
+                            <p> 
                                 You may email to us and our customer service team will email you the e-confirmation within 24hours. Alternatively, for some bus company ONLY, if you are the person who bought the ticket, kindly show the counter staff your registered passport number / telephone / Identity Card. The counter will issue the ticket to you.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span> I do not have a printer. Is it a must 
+                            <h4> I do not have a printer. Is it a must 
                                 to take the printout of the ticket?</h4>
 
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span> 
+                            <p> 
                                 NO. It is compulsory to print out the e-confirmation of the booking. For some bus company, printed e-confirmation is optional as long as you could provide the booking reference number. Kindly refer to the notes during your booking and the notes inside the e-confirmation email. You also need to present your ID or the booking reference number to get the boarding pass.</p>
                         </div>
                     </div>
@@ -262,34 +291,34 @@
                     </h2>
                     <div class="sub-faqs" id="sub-member">
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span>Can I apply for a membership?</h4>
+                            <h4>Can I apply for a membership?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span>Yes.</p>
+                            <p>Yes.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span>How can I register as a member?</h4>
+                            <h4>How can I register as a member?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span>Please go to home page of www.busonlinticket.com and click “Sign Up Here” or click the link here</p>
+                            <p>Please go to home page of www.busonlinticket.com and click “Sign Up Here” or click the link here</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span>Can I edit my contact number?</h4>
+                            <h4>Can I edit my contact number?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span>Yes, you can edit your member profile after login.</p>
+                            <p>Yes, you can edit your member profile after login.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span>Can I change my password?</h4>
+                            <h4>Can I change my password?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span>Yes, you can change your password under member profile.</p>
+                            <p>Yes, you can change your password under member profile.</p>
                         </div>
                         <div class="sub-faqs-top">
-                            <h4><span>Q</span>I forget my password, how?</h4>
+                            <h4>I forget my password, how?</h4>
                         </div>
                         <div class="sub-faqs-bottom">
-                            <p><span>A</span>You can retrieve your password by entering your registered email address here.</p>
+                            <p>You can retrieve your password by entering your registered email address here.</p>
                         </div>
                     
                     </div>
@@ -405,6 +434,14 @@
                 </div>
             </div>
         </div>
+        <div class="payment-modes">
+            <img src="Images/mpesa-logo.png.png" alt="mpesa payment platform" class="payment-mode">
+            <img src="Images/airtel-logo.png" alt="airtel payment platform" class="payment-mode">
+            <img src="Images/pesapal-logo.png" alt="pesapal platform" class="payment-mode">
+            <img src="Images/logo-mastercard.png" alt="mastercard platform" class="payment-mode">
+            <img src="Images/logo-visa.png" alt="visa platform" class="payment-mode">
+            <img src="Images/logo-paypal.png" alt="paypal payment platform" class="payment-mode">
+        </div>
     </main>
 
     <footer>
@@ -420,9 +457,12 @@
             <div class="more-subs">
                 <div class="subs-links">
                     <ul>
-                        <li><a href="#about">About</a></li>
                         <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#faqs">faqs</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Get your Ticket</a></li>
+                        <li><a href="#contact">My booking</a></li>
                     </ul>
                    
                 </div>
@@ -446,8 +486,14 @@
                 </div>
             </div>
         </div>
-        <div class="footer-text">
-            Copyright Kaba Inc &#064; 2024 all rights reserved. <i>Inspiration from Mi Vida</i>
+        <div class="foot-main">
+            <div class="foot">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+            </div>
+            <div class="footer-text">
+                Copyright Kaba Inc &#064; 2024 | all rights reserved. <i>Inspiration from Mi Vida</i>
+            </div>
         </div>
     </footer>
 </body>
