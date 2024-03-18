@@ -11,6 +11,7 @@ header{
     background-color: #f7f9fb;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
     z-index: 100;
+    display: none;
 }
 
 .logo a{
@@ -61,4 +62,38 @@ ul a:hover {
     background-color: white;
     color: #1f2937;
     border: 1px solid #1f2937;
+}
+
+.responsive-header {
+    background-color: #f7f9fb;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 100;
+}
+
+.hamburger-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.resp-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 80px;
+}
+
+.resp-img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icons-properties {
+    height: 40px;
 }

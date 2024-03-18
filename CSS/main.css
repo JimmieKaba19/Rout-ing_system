@@ -239,7 +239,6 @@
 .about-subs {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
@@ -290,10 +289,6 @@
     margin-bottom: 15px;
 }
 
-.about-image {
-    border-radius: 20px;
-}
-
 .sub-content {
     display: flex;
     justify-content: center;
@@ -336,6 +331,7 @@
 .loyalty {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     padding: 10px 100px;
     justify-content: center;
 }
@@ -672,3 +668,129 @@
     width: 70px;
 
 }
+
+/* ######### responsive layout ########### */
+
+@media screen and (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .sub-article {
+        width: 350px;
+    }
+
+    .about-content, .sub-contents {
+        flex-direction: column;
+    }
+
+    .about-subs {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .about-subs-img {
+        display: none;
+    }
+
+    .faqs-content {
+        flex-direction: column;
+    }
+
+    .faqs-sub-content {
+        width: 90%;
+    }
+
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 750px) {
+    .hero-section {
+        padding: 15px 30px;
+    }
+
+    .hero-left, .hero-right {
+        padding: 32px 0;
+    }
+    
+
+    .hero-left h1{
+        font-size: 40px;
+        width: 500px;
+    }
+    
+    .hero-left p {
+        font-size: 16px;
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+    
+    .hero-btn {
+        font-size: 16px;
+    }
+    
+    .booking-form {
+        width: auto;
+        padding: 10px;
+    }
+
+    .form-contents {
+        padding: 0;
+        gap: 10px;
+    }
+
+    .form-content {
+        padding: 0;
+    }
+
+    .form-content label {
+        font-size: 16px;
+    }
+
+    .form-content input {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .footer-more {
+        flex-direction: column;
+    }
+
+    .footer-login {
+        display: none;
+    }
+
+    .subs-sections {
+        padding: 10px;
+        width: 120px;
+    }
+
+    .sub-contents {
+        padding: 0;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-left {
+        padding: 0;
+    }
+
+    .about-image {
+        width: 400px;
+    }
+
+    .sub-content {
+        flex-direction: column;
+    }
+
+    .loyalty {
+        padding: 0;
+    }
+  }
