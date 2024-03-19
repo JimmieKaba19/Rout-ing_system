@@ -239,6 +239,7 @@
 .about-subs {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
@@ -256,6 +257,14 @@
 
 .about-subs-img {
     width: 400px;
+}
+
+.about-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .subs-sections {
@@ -672,6 +681,36 @@
 /* ######### responsive layout ########### */
 
 @media screen and (max-width: 992px) {
+    .responsive-header{
+        display: flex;
+        cursor: pointer;
+    }
+
+    #close-ham {
+        display: none;
+    }
+
+    .navigation-items{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 78px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 60px;
+        height: calc(50vh - 78px);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    .navigation-items .logo {
+        display: none; 
+    }    
+
+.navigation-items ul {
+    flex-direction: column;
+}
     .hero-section {
         flex-direction: column;
         height: 100vh;
@@ -722,7 +761,7 @@
     
     .hero-left p {
         font-size: 16px;
-        width: fit-content;
+        width: auto;
         margin-bottom: 30px;
     }
     
@@ -755,6 +794,10 @@
 
     .contact-content {
         flex-direction: column;
+    }
+
+    .contact-article {
+        width: 170px;
     }
 
     .footer-more {
