@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form-body {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+    background-color: #fff;
+}
+
+h1, p{
+    text-align: center;
+    color: #1f2937;
+    margin: 5px;
+}
+.titles{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.login-btn, .signup-btn{
+    background-color: #f7f9fb;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #1f2937;
+    cursor: pointer;
+    transition: 400ms;
+    border: none;
+}
+
+.titles #login:hover,
+.titles #signup:hover {
+    color: #3882f6;
+}
+
+.form-title {
+    border: 1px solid #166466;
+}
+
+.form-content {
+    padding: 10px;
+    padding: 30px;
+}
+
+.form-content.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-image{
+    height: 100%;
+    width: 60vw;
+    border-radius: 5px;
+}
+
+.login-form {
+    background-color: #f7f9fb;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.u-name,.p-word{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    color: #1f2937;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #f7f9fb;
+}
+
+.login-form input {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #166466; 
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0  3px 15px rgba(150, 75, 75, 0.15)
+}
+
+.p-word, .pass-word {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.visible{
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: 70px;
+    cursor: pointer;
+}
+
+.hide{
+    position: absolute;
+    width: 20px;
+    right: 20px;
+    top: 70px;
+    display: none;
+    cursor:pointer;
+}
+
+.pass-word .visible{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.pass-word .hide{
+    position: absolute;
+    top: 40px;
+    right: 120px;
+    cursor: pointer;
+}
+
+.form-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f7f9fb;
+    padding: 15px;
+}
+
+.login-form input[type="submit"]{
+    background-color: #166466;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    width: 400px;
+    align-self: center;
+    transition: 400ms ease-in-out;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #3882f6;
+    color: #f7f9fb;
+}
+
+.form-submit .pword-reset{
+    text-decoration: underline;
+    font-size: 16px;
+    transition: 400ms;
+}
+
+.form-submit .pword-reset:hover {
+    color: #3882f6;
+}
+
+h4 {
+    border-bottom: 2px solid #1f2937;
+}
+
+.other-forms {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.other-forms-images {
+    width: 60px;
+}
+
+.option-links{
+    transition: 400ms ease-in-out;
+}
+
+.option-links:hover {
+    background-color: #f7f9fb;
+    box-shadow: 0  3px 15px rgba(0, 0, 0, 0.15)
+}
+
+.signup-form {
+    background-color: #f7f9fb;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.signup-form label {
+    color: #1f2937;
+    font-size: 20px;
+    background-color: #f7f9fb;
+}
+
+.signup-form input {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #166466; 
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0  3px 15px rgba(0, 0, 0, 0.15)
+}
+
+.red-notice {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    display: none;
+}
+
+.signup-form input[type="submit"]{
+    background-color: #166466;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    width: 400px;
+    align-self: center;
+    transition: 400ms ease-in-out;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #3882f6;
+    color: #f7f9fb;
+}
+
+.signup-form input[type="checkbox"] {
+    padding: 0;
+    width: auto;
+    margin-top: 15px;
+}
+
+.form-terms {
+    display: flex;
+    align-items: center;
+}
+
+.form-terms a {
+    font-size: 16px;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.form-terms a:hover {
+    color: #3882f6;
+}
+
+@media screen and (max-width: 992px) {
+    .form-body {
+        flex-direction: column;
+        background: url('../Images/1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .form-content {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-content.left {
+        display: none;
+    }
+
+    .form-content.right{
+        background-color: transparent;
+    }
+
+    h1, p{
+        text-align: center;
+        color: #fff;
+    }
+
+    .form-terms p{
+        color: #1f2937;
+    }
+
+    .other-forms {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-body {
+        padding: 15px 30px;
+    }
+
+    .form-content.left {
+        display: none;
+    }
+
+    .login-form,
+    .signup-form {
+        display: none;
+    }
+
+    .login-form input,
+    .signup-form input {
+        padding: 15px 30px;
+        font-size: 16px;
+        width: auto;
+    }
+
+    .login-form input[type="submit"],
+    .signup-form input[type="submit"] {
+        width: auto;
+        font-size: 16px;
+    }
+
+    h1, p{
+        text-align: center;
+        color: #fff;
+    }
+
+    .form-terms p{
+        color: #1f2937;
+    }
+}
