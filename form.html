@@ -8,25 +8,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="Images/_337a0b08-c3e3-40a1-95f6-a3afe7c619af.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/form.css">
     <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/main.css">
+    <!-- <link rel="stylesheet" href="CSS/main.css"> -->
     <link rel="stylesheet" href="CSS/footer.css">
+    <script src="JS/user.js" defer></script>
     <title>Login || Signup</title>
 </head>
 <body>
-    <h1>form page</h1>
+    <main class="form-body">
+        <div class="form-content left">
+            <img src="Images/1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpg" alt="form background image" class="form-image">
+        </div>
+        <div class="form-content right">
+            <h1>Welcome back!</h1>
+            <p>Login to continue or Signup if you are new.</p>
+            <div class="titles">
+                <button type="button" class="login-btn" id="login">Login</button>
+                <div class="form-title"></div>
+                <button type="button" class="signup-btn" id="signup">Signup</button>
+            </div>
+            <div class="login-form">
+                <form action="" method="get" id="login-f">
+                    <div class="u-name">
+                        <label for="username" class="u-name">
+                            Username
+                        </label>
+                        <input type="text" name="username" id="" class="user-name" placeholder="Enter username">
+                    </div>
+                    <div class="p-word">
+                        <label for="password">Password</label>                            
+                        <input type="password" name="password" id="" class="password" placeholder="password">
+                        <img src="Images/visible-pword.png" alt="password visibility" class="visible">
+                        <img src="Images/hide-pword.png" alt="password visibility" class="hide">
+                    </div>
+                    <div class="form-submit">
+                        <input 
+                        type="submit"
+                        class="login-btn" value="Login">
+                        <a href="#" class="pword-reset">Forgot your password?</a>
+                        <div class="other-forms">
+                            <h4>Or login with</h4>
+                            <div class="form-options">
+                                <a href="#" class="option-links"><img src="Images/google.png" alt="google login option" class="other-forms-images"></a>
+                                 <a href="#" class="option-links"><img src="Images/facebook.png" alt="facebook login option" class="other-forms-images"></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="signup-form">
+                <form action="" method="get" id="signup-f">
+                    <div class="contact-details">
+                        <label for="f-name" class="f-name">
+                            Full name
+                        </label>
+                        <input type="text" name="fname" id="" class="full-name" placeholder="John Doe">
+                        
+                        <div class="pass-word">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input type="password" name="sname" id="" class="p-word-sign" placeholder="password">
+                            <img src="Images/visible-pword.png" alt="password visibility" class="visible">
 
-    <footer>
-        <div class="footer-more">
-            <div class="more-subs">
-                <div class="subs-logo">
-                    <img src="Images/_337a0b08-c3e3-40a1-95f6-a3afe7c619af.jpeg" alt="" class="logo-img">
-                </div>
-                <div class="footer-logo">
-                    <a href="#"> <h2 class="footer-title">Rout-Ing</h2> </a>
-                </div>
+                            <label for="password">
+                                Confirm password
+                            </label>
+                            <input type="password" name="sname" id="" class="p-word-confirm" placeholder="confirm password">
+                            <img src="Images/hide-pword.png" alt="password visibility" class="hide">
+                            <p class="red-notice">*Passwords do not match</p>
+                        </div>
+<!-- 
+                        <label for="county">County</label>
+                        <input type="text" name="" id="" class="county" placeholder="nairobi"> -->
+
+                        <label for="email">Email</label>
+                        <input type="email" name="" id="" class="email" placeholder="johndoe@gmail.com">
+
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="" id="" class="phone-no" placeholder="(+254) 700 000 000">
+                    </div>
+                    <div class="form-terms">
+                        <input type="checkbox" name="terms" id="" class="checkbox" placeholder="terms"> 
+                        <p>I agree to the <a href="#">Terms</a> and <a href="#">Conditions</a>.</p>
+                    </div>
+                   <div class="form-submit">
+                        <input 
+                        type="submit"
+                        class="signup-btn" value="Signup">
+                    </div>
+                </form>
             </div>
         </div>
+    </main>
+
+    <footer>
         <div class="foot-main">
             <div class="foot">
                 <a href="#" class="footer-link">Privacy Policy</a>
