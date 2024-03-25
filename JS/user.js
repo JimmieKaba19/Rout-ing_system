@@ -62,24 +62,16 @@ navBtns.forEach((btn) => {
         let target = event.target;
         switch(target.id){
             case "login":
-                if(loginForm.style.display == "block") {
-                    loginForm.style.display = "none";
-                    loginBtn.setAttribute("style", "background-color: #f7f9fb; color: #if2937;")
-                } else{
-                    loginForm.style.display = "block";
-                    signupForm.style.display = "none";
-                    loginBtn.setAttribute("style", "background-color: #3882f6; color: #fff;")
-                }
+                loginForm.style.display = "block";
+                loginBtn.setAttribute("style", "background-color: #3882f6; color: #fff;")
+                signupForm.style.display = "none";
+                signupBtn.setAttribute("style", "background-color: #f7f9fb; color: #1f2937;")
                 break;
             case "signup":
-                if(signupForm.style.display == "block") {
-                    signupForm.style.display = "none";
-                    signupBtn.setAttribute("style", "background-color: #f7f9fb; color: #if2937;")
-                } else{
-                    signupForm.style.display = "block";
-                    signupBtn.setAttribute("style", "background-color: #3882f6; color: #fff;")
-                    loginForm.style.display = "none";
-                }
+                loginForm.style.display = "none";
+                loginBtn.setAttribute("style", "background-color: #f7f9fb; color: #1f2937;")
+                signupForm.style.display = "block";
+                signupBtn.setAttribute("style", "background-color: #3882f6; color: #fff;")
                 break;
         }
     });
