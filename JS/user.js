@@ -23,6 +23,7 @@ forms.forEach((form) => {
                     alert("Fill in details to login!");
                 } else {
                     alert("Loggin in");
+                    window.location.href = "index.html";
                 }
 
                 break;
