@@ -1,0 +1,263 @@
+/* header */
+.responsive-header {
+    background-color: #f7f9fb;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    display: none;
+    color: #1f2937;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+#hamburger-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* display: none; */
+}
+
+.resp-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 80px;
+}
+
+.resp-logo a{
+    color: #1f2937;
+}
+
+.resp-img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.icons-properties {
+    height: 40px;
+}
+
+/* body */
+
+/* ######### responsive layout ########### */
+
+@media screen and (max-width: 992px) {
+    .responsive-header{
+        display: flex;
+        cursor: pointer;
+    }
+
+    #close-ham {
+        display: none;
+    }
+
+    .navigation-items{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 78px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 60px;
+        height: calc(50vh - 78px);
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+        z-index: 100;
+    }
+
+    .navigation-items .logo {
+        display: none; 
+    }    
+
+    .navigation-items ul {
+        flex-direction: column;
+    }   
+    .hero-section {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .sub-article {
+        width: 350px;
+    }
+
+    .about-content, .sub-contents {
+        flex-direction: column;
+    }
+
+    .about-subs {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .about-subs-img {
+        display: none;
+    }
+
+    .faqs-content {
+        flex-direction: column;
+    }
+
+    .faqs-sub-content {
+        width: 90%;
+    }
+
+  }
+  
+  /* On screens that are 750 or less, set the background color to olive */
+  @media screen and (max-width: 750px) {
+    .hero-section {
+        padding: 15px 30px;
+    }
+
+    .hero-left, .hero-right {
+        padding: 32px 0;
+    }
+    
+
+    .hero-left h1{
+        font-size: 40px;
+        width: 500px;
+    }
+    
+    .hero-left p {
+        font-size: 16px;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    
+    .hero-btn {
+        font-size: 16px;
+    }
+    
+    .booking-form {
+        width: auto;
+        padding: 10px;
+    }
+
+    .form-contents {
+        padding: 0;
+        gap: 10px;
+    }
+
+    .form-content {
+        padding: 0;
+    }
+
+    .form-content label {
+        font-size: 16px;
+    }
+
+    .form-content input {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-article {
+        width: 170px;
+    }
+
+    .footer-more {
+        flex-direction: column;
+    }
+
+    .footer-login {
+        display: none;
+    }
+
+    .subs-sections {
+        padding: 10px;
+        width: 120px;
+    }
+
+    .sub-contents {
+        padding: 0;
+    }
+
+    .about-content {
+        padding: 0;
+    }
+
+    .about-left {
+        padding: 0;
+    }
+
+    .about-image {
+        width: 400px;
+    }
+
+    .sub-content {
+        flex-direction: column;
+    }
+
+    .loyalty {
+        padding: 0;
+    }
+  }
+
+  /* smallest screens */
+  @media screen and (max-width: 600px){
+    .hero-section {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .form-contents {
+        flex-direction: column;
+    }
+
+    .hero-left{
+        width: 500px;
+    }
+
+    .hero-left h1 {
+        width: 500px;
+    }
+
+    .hero-left p {
+        font-size: 16px;
+        width: 500px;
+    }
+
+    .about-image {
+        width: auto;
+        display: none;
+    }
+  }
+
+  /* Booked */
+  @media screen and (max-width: 750px) {
+    .check-booking {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+/* Booking page */
+@media screen and (max-width: 992px) {
+    .form-info {
+        flex-direction: column;
+    }
+
+    .header-form input {
+        font-size: 16px;
+    }
+
+    .header-form input[type="submit"]{
+        margin-top: 30px;
+    }
+}

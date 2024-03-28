@@ -1,0 +1,145 @@
+.booked {
+    height: 100%;
+    background-color: #fff;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.booked-titles {
+    padding: 20px;
+    text-align: center;
+}
+
+.booked-titles h1 {
+    margin: 0;
+    color: #1f2937;
+}
+
+.booked-titles p {
+    color: #1f2937;
+}
+
+.check-booking {
+    background-color: #f9faf8;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.check-booking label {
+    font-size: 18px;
+    color: #1f2937;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+.check-booking input {
+    font-size: 18px;
+    color: #166466;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.info p{
+    font-size: 14px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.more-info{
+    width: 30px;
+}
+
+
+.submit-ref {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify-no {
+    color: #166466;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: underline;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.verify-no:hover {
+    color: #3882f6;
+}
+
+.check-booking input[type="submit"],
+.submit-ref input[type="submit"]{
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 10px;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.check-booking input[type="submit"]:hover,
+.submit-ref input[type="submit"]:hover{
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.otp {
+    display: none;
+}
+
+.verify-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.verify-email label{
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.assistance {
+    border: 2px solid #166466;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.assistance a {
+    color: #166466;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: underline;
+    padding: 5px;
+}
