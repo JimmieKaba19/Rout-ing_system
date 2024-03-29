@@ -1,24 +1,28 @@
+.search-alert {
+    padding: 5px;
+    background-color: #166466;
+    color: #f9faf8;
+    text-align: center;
+}
+
 .book-content{
-    height: 100vh;
+    height: 100%;
     padding: 30px 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.available-trips {
-    background-color: #166466;
-    padding: 20px;
+h1, h2, h3, p {
+    margin: 0;
+    text-align: center;
+    color: #1f2937;
 }
 
-.seat-configuration {
-    background-color: #1f2937;
-    padding: 20px;
-}
-
-.related-trips {
-    background-color: #3882f6;
-    padding: 20px;
+h4 {
+    font-weight: normal;
+    margin: 5px;
+    color: #166466;
 }
 
 .header-form {
@@ -74,4 +78,72 @@
 .header-form input[type="submit"]:hover {
     background-color: transparent;
     color: #3882f6;
+}
+
+/* available trips for users search */
+.available-trips {
+    background-color: #166466;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .seat-configuration {
+    background-color: #1f2937;
+    padding: 20px;
+} */
+
+.boarding-current {
+    display: flex;
+    background-color: #f9faf8;
+    padding: 10px;
+    justify-content: center;
+}
+
+.boarding-content {
+    border: 1px solid #166466;
+    padding: 5px;
+}
+
+.boarding-content h3 {
+    text-decoration: underline;
+}
+
+.boarding-content span {
+    color: green;
+}
+
+.content-info {
+    display: flex;
+}
+
+.book-seat{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #166466;
+    color: #f9faf8;
+    border: none;
+    border-radius: 5px;
+    transition: 400ms ease-in-out;
+}
+
+.book-seat:hover {
+    background-color: #3882f6;
+}
+
+/* related trips info */
+.related-trips {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3882f6;
+    padding: 20px;
+}
+
+.related-current {
+    display: flex;
+    background-color: #f9faf8;
+    padding: 10px;
+    justify-content: center;
 }

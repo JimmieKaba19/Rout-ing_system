@@ -83,7 +83,7 @@
     }   
     .hero-section {
         flex-direction: column;
-        height: 80vh;
+        height: 100vh;
     }
 
     .sub-article {
@@ -212,11 +212,11 @@
   @media screen and (max-width: 600px){
     .hero-section {
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
 
     .form-contents {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .hero-left{
@@ -249,6 +249,10 @@
 
 /* Booking page */
 @media screen and (max-width: 992px) {
+    .book-content {
+        padding: 30px;
+    }
+    
     .form-info {
         flex-direction: column;
     }
@@ -259,5 +263,15 @@
 
     .header-form input[type="submit"]{
         margin-top: 30px;
+    }
+
+    .content-info {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-header {
+        flex-direction: column;
     }
 }
