@@ -25,9 +25,9 @@
         <div class="navigation-items">
             <div class="header-left">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </div>
             <div class="logo">
@@ -61,9 +61,13 @@
     </nav>
     
     <main>
+        <div class="search-alert">
+            <span>Search results available for departure: and destination: </span>
+        </div>
         <div class="book-content">
-            <h1>Ticket purchase page</h1>
-            <div class="header-form">
+            <h1>Welcome Book your Ticket</h1>
+            <h3>Search ticket online</h3>
+            <div class="header-form booking-form">
             <form action="booking.html" method="get">
                 <div class="form-header">
                     <div class="form-info">
@@ -87,12 +91,122 @@
             </div>
             <div class="available-trips">
                 <h2>Available trips</h2>
-            </div>
-            <div class="seat-configuration">
-                <h2>Seat configuration</h2>
+                <p>Vehicles currently boarding</p>
+                <div class="boarding-current">
+                    <div class="boarding-content">
+                        <h3>Matatu Sacco</h3>
+                        <p>2NK sacco</p>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Nanyuki &#8211 Nairobi</h3>
+                        <div class="content-info">
+                            <div class="content-more-info">
+                                <h4>Departure Time: 3:30 pm</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>E.A Time: 8:00pm</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>Seat Capacity: 14</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Trip Cost</h3>
+                        <p>750 KSH</p>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Boarding Status</h3>
+                        <P><span>Booking</span></P>
+                    </div>
+                    <div class="boarding-content">
+                        <input type="submit" value="Book Seat" class="book-seat">
+                    </div>
+                </div>
+                <div class="boarding-current">
+                    <div class="boarding-content">
+                        <h3>Matatu Sacco</h3>
+                        <p>Nanyuki Cabs</p>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Nanyuki &#8211 Nairobi</h3>
+                        <div class="content-info">
+                            <div class="content-more-info">
+                                <h4>Departure Time: 8:00am</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>E.A Time:12:00pm</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>Seat Capacity: 11</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Trip Cost</h3>
+                        <p>800 KSH</p>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Boarding Status</h3>
+                        <p><span>Booking</span></p>
+                    </div>
+                    <div class="boarding-content">
+                        <input type="submit" value="Book Seat" class="book-seat">
+                    </div>
+                </div>
             </div>
             <div class="related-trips">
                 <h2>Related trips</h2>
+                <div class="related-current">
+                    <div class="boarding-content">
+                        <h3>Matatu Sacco</h3>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Nanyuki &#8211 Nairobi</h3>
+                        <div class="content-info">
+                            <div class="content-more-info">
+                                <h4>Departure Time</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>E.A Time</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>Seat Capacity</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Trip Cost</h3>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Boarding Status</h3>
+                    </div>
+                </div>
+                <div class="related-current">
+                    <div class="boarding-content">
+                        <h3>Matatu Sacco</h3>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Nanyuki &#8211 Nairobi</h3>
+                        <div class="content-info">
+                            <div class="content-more-info">
+                                <h4>Departure Time</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>E.A Time</h4>
+                            </div>
+                            <div class="content-more-info">
+                                <h4>Seat Capacity</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Trip Cost</h3>
+                    </div>
+                    <div class="boarding-content">
+                        <h3>Boarding Status</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -110,12 +224,12 @@
             <div class="more-subs">
                 <div class="subs-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#faqs">faqs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Get your Ticket</a></li>
-                        <li><a href="#contact">My booking</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#faqs">faqs</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="booking.html">Get your Ticket</a></li>
+                        <li><a href="booked.html">My booking</a></li>
                     </ul>
                    
                 </div>
