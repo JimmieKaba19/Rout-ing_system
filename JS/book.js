@@ -13,8 +13,10 @@ bookingForm.addEventListener("submit", (e) => {
     if(from === "" || to === "" || date === "" || time === "") {
         alert("please fill in all the fields!");
     }
-    else {
+    else if(window.location.href == "index.html") {
         window.location.href = `booking.html`
+    } else {
+        alert("Searching")
         //`?from= ${from} to= ${to} date= ${date} time= ${time}`;
     }
 });
