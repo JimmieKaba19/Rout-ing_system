@@ -17,7 +17,6 @@ footer {
 .more-subs {
     display: flex;
     flex-direction: column;
-    /* padding: 15px; */
     width: 200px;
     align-items: center;
     justify-content: center;
@@ -32,6 +31,7 @@ footer {
 .more-subs h3 {
     margin: 0;
     font-style: italic;
+    color: #f9faf8;
 }
 
 .more-subs p {

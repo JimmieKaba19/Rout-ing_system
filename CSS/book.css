@@ -1,9 +1,14 @@
 .search-alert {
-    padding: 5px;
-    background-color: #166466;
-    color: #f9faf8;
-    text-align: center;
+    padding: 5px 15px;
+    background-color: #3aafa9;
+    color: #feffff;
+    display: none;
 }
+
+.close-search {
+    height: 30px;
+    cursor: pointer;
+} 
 
 .book-content{
     height: 100%;
@@ -13,16 +18,17 @@
     gap: 20px;
 }
 
-h1, h2, h3, p {
+.book-content h1, h2, h3, p {
     margin: 0;
     text-align: center;
     color: #1f2937;
 }
 
-h4 {
+.book-content h4 {
     font-weight: normal;
     margin: 5px;
     color: #166466;
+    font-size: 14px;
 }
 
 .header-form {
@@ -82,27 +88,31 @@ h4 {
 
 /* available trips for users search */
 .available-trips {
-    background-color: #166466;
+    background-color: #f9faf8;
     padding: 20px;
     gap: 15px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
-
-/* .seat-configuration {
-    background-color: #1f2937;
-    padding: 20px;
-} */
 
 .boarding-current {
     display: flex;
-    background-color: #f9faf8;
-    padding: 10px;
+    gap: 10px;
+    padding: 20px;
     justify-content: center;
+    align-items: center;
+    border: 2px solid #1f2937;
+    border-radius: 5px;
+    display: none;
+}
+
+.booking-info {
+    display: flex;
 }
 
 .boarding-content {
-    border: 1px solid #166466;
+    border-right: 2px solid #166466;
     padding: 5px;
 }
 
@@ -118,7 +128,7 @@ h4 {
     display: flex;
 }
 
-.book-seat{
+.book-ticket{
     padding: 10px 20px;
     font-size: 18px;
     background-color: #166466;
@@ -128,22 +138,46 @@ h4 {
     transition: 400ms ease-in-out;
 }
 
-.book-seat:hover {
+.book-ticket:hover {
     background-color: #3882f6;
 }
 
 /* related trips info */
 .related-trips {
-    gap: 15px;
+    background-color: #f9faf8;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    background-color: #3882f6;
     padding: 20px;
 }
 
 .related-current {
-    display: flex;
-    background-color: #f9faf8;
+    border: 1px solid #f9faf8;
     padding: 10px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.related-routes{ 
+    background-color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.route {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    border:2px solid #166466;
+    padding: 10px;
+}
+
+.route span {
+    color: red;
 }
