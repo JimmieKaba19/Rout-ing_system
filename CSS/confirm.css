@@ -1,0 +1,21 @@
+.confirm-content {
+    padding: 32px 50px;
+    border: 2px solid blue;
+    height: 100%;
+}
+
+.confirm-content h1 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.content-details {
+    border: 2px solid purple;
+    padding: 20px;
+}
