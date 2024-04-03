@@ -5,7 +5,7 @@ const resultsAlert = document.querySelector(".results-alert");
 const searchClose = document.querySelector(".close-search");
 const SubmitSearch = document.querySelector(".submit");
 const tripsAvailable = document.querySelectorAll(".boarding-current");
-const bookButtons = document.querySelector(".book-ticket");
+const bookButtons = document.querySelectorAll(".book-ticket");
 
 //booking form 
 bookingForm.addEventListener("submit", (e) => {
@@ -16,8 +16,9 @@ bookingForm.addEventListener("submit", (e) => {
     let to = document.querySelector(".to").value.toLowerCase();
     let date = document.querySelector(".date").value; //return date is optional hence only selecting D1
     let time = document.querySelector(".time").value;
+    let pickUp = document.querySelector(".pickup").value;
     
-    if(from === "" || to === "" || date === "" || time === "") {
+    if(from === "" || to === "" || date === "" || time === "" || pickUp == "") {
         alert("please fill in all the fields!");
     } else if(window.location.href == "index.html") {
         window.location.href = `booking.html`
@@ -39,6 +40,13 @@ bookingForm.addEventListener("submit", (e) => {
         tripsAvailable.forEach(trip => {
             trip.style.display = "flex";
         });
+
+        bookButtons.forEach((bookBtn) => {
+            bookBtn.addEventListener("click", () => {
+                window.location.href = "./pay-confirm.html";
+            });
+        });
+
     } else {
         alert("Trip request currently unavailable!")
         //`?from= ${from} to= ${to} date= ${date} time= ${time}`;
