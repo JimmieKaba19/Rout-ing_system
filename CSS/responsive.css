@@ -280,3 +280,35 @@
         flex-direction: column;
     }
 }
+
+/* Pay confirm page */
+@media screen and (max-width: 992px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content {
+        padding: 0;
+    }
+    
+    .dates,
+    .user-seats{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .trip-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ticket-content {
+        flex-direction: column;
+    }
+}

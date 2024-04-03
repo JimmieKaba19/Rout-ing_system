@@ -1,21 +1,176 @@
+.alert-content {
+    padding: 5px 15px;
+    background-color: #3aafa9;
+    color: #feffff;
+    display: none;
+}
+
+.close-alert {
+    height: 30px;
+    cursor: pointer;
+} 
+
 .confirm-content {
     padding: 32px 50px;
-    border: 2px solid blue;
     height: 100%;
+    background-color: #fff;
 }
 
 .confirm-content h1 {
     text-align: center;
+    border-bottom: 2px solid #166466;
 }
 
 .content {
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     gap: 15px;
 }
 
 .content-details {
-    border: 2px solid purple;
     padding: 20px;
+    color: #1f2937;
+    background-color: #f9faf8;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.content-details h2 {
+    border-bottom: 2px solid #166466;
+}
+
+.content-details span {
+    color: #166466; 
+}
+
+.details-content {
+    border-bottom: 2px solid #166466;
+    padding: 15px;
+}
+
+.extra-pay,
+.extra-ticket {
+    display: none;
+}
+
+.trip-info {
+    padding: 20px;
+    color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    width: 600px;
+}
+
+.trip-info label {
+    font-weight: 600;
+}
+
+.dates, 
+.user-seats {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+}
+
+.trip-buttons {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 10px;
+}
+
+.trip-btns {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: none;
+    border-radius: 10px;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.trip-btns:hover {
+    background-color: #166466;
+    color: #f9faf8;
+}
+
+.prompt-content p {
+    font-size: 14px;
+}
+
+.prompt-content,
+.manual-pay {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.prompt-content label,
+.manual-pay label{
+    font-weight: 600;
+}
+
+.prompt-content input,
+.manual-pay input {
+    font-size: 18px;
+    color: #166466;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    width: auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.prompt-btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-content p{
+    font-size: 16px;
+}
+
+.manual-info {
+    color: #166466;
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    text-decoration: underline;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.manual-info:hover {
+    color: #3882f6;
+}
+
+.manual-pay {
+    display: none;
+}
+
+.ticket-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ticket-left h4{
+    color: red;
+}
+
+.ticket-left{
+    text-align: center;
+    width: 300px;
+    flex-wrap: wrap;
+    font-size: 14px;
 }
