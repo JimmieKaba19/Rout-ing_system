@@ -70,21 +70,28 @@
             <h3>Search ticket online</h3>
             <div class="header-form booking-form">
                 <form action="booking.html" method="get">
-                    <div class="form-header">
-                        <div class="form-info">
-                            <label for="from">Leaving From:</label>
-                            <input type="text" class="from" name="from" placeholder="Departure">
-                            <label for="date">Travel Date:</label>
-                            <input type="date" class="date" name="date" placeholder="Travel Date">
-                            <label for="time">Time:</label>
-                            <input type="time" class="time" name="time" placeholder="time">
+                    <div class="contents">
+                        <div class="form-header">
+                            <div class="form-info">
+                                <label for="from">Leaving From:</label>
+                                <input type="text" class="from" name="from" placeholder="Departure">
+                                <label for="pickup">Pickup Point:</label>
+                                <input type="text" class="pickup" name="pickup" placeholder="Pickup Point">
+                                <label for="date">Travel Date:</label>
+                                <input type="date" class="date" name="date" placeholder="Travel Date">
+                            </div>
+                            <div class="middle"></div>
+                            <div class="form-info">
+                                <label for="to">Travelling To:</label>
+                                <input type="text" class="to" name="to" placeholder="Destination">
+                                <label for="time">Time:</label>
+                                <input type="time" class="time" name="time" placeholder="time">
+                                <label for="date">Return Date: <span>(Optional)</span></label>
+                                <input type="date" class="date" name="date" placeholder="Return Date">
+                                
+                            </div>
                         </div>
-                        <div class="middle"></div>
-                        <div class="form-info">
-                            <label for="to">Travelling To:</label>
-                            <input type="text" class="to" name="to" placeholder="Destination">
-                            <label for="date">Return Date: <span>(Optional)</span></label>
-                            <input type="date" class="date" name="date" placeholder="Return Date">
+                        <div class="form-search">
                             <input type="submit" class="submit" value="Search">
                         </div>
                     </div>
@@ -121,6 +128,10 @@
                             <h3>Boarding Status</h3>
                             <P><span>Booking</span></P>
                         </div>
+                        <div class="boarding-content">
+                            <h3>Vehicle</h3>
+                            <P><span>KCC 255R</span></P>
+                        </div>
                     </div>
                     <div class="booking-select">
                         <div class="boarding">
@@ -155,6 +166,10 @@
                         <div class="boarding-content">
                             <h3>Boarding Status</h3>
                             <P><span>Booking</span></P>
+                        </div>
+                        <div class="boarding-content">
+                            <h3>Vehicle</h3>
+                            <P><span>KBS 540Q</span></P>
                         </div>
                     </div>
                     <div class="booking-select">

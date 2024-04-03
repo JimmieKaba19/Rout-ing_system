@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="CSS/book.css">
     <link rel="stylesheet" href="CSS/responsive.css">
     <link rel="stylesheet" href="CSS/confirm.css">
+    <link rel="stylesheet" href="CSS/seat_select.css">
     <script src="JS/script.js" defer></script>
     <script src="JS/user.js" defer></script>
     <script src="JS/book.js" defer></script>
     <script src="JS/responsive.js" defer></script>
+    <script src="JS/confirm.js" defer></script>
     <title>Ticket || Rout-Ing</title>
 </head>
 <body>
@@ -26,14 +28,14 @@
         <div class="navigation-items">
             <div class="header-left">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </div>
             <div class="logo">
                 <img src="Images/_337a0b08-c3e3-40a1-95f6-a3afe7c619af.jpeg" alt="" class="logo-img">
-                <a href="#"> <h1 class="header-logo">Rout-Ing</h1> </a>
+                <a href="index.html"> <h1 class="header-logo">Rout-Ing</h1> </a>
             </div>
             <div class="header-right">
                 <ul>
@@ -53,7 +55,7 @@
             </div>
             <div class="resp-logo">
                 <img src="Images/_337a0b08-c3e3-40a1-95f6-a3afe7c619af.jpeg" alt="" class="resp-img">
-                <a href="#"> <h1 class="header-resp">Rout-Ing</h1> </a>
+                <a href="index.html"> <h1 class="header-resp">Rout-Ing</h1> </a>
             </div>
             <div class="icons">
                 <img src="Images/user-account.png" alt="hamburger close navbar icon" class="icons-properties">                
@@ -62,22 +64,184 @@
     </nav>
     
     <main>
+        <div class="alert-content">
+            <span class="info-alert"></span>
+            <img src="Images/close-alert.png" alt="close the alert" class="close-alert">
+        </div>
         <div class="confirm-content">
             <h1>Booking Confirmation</h1>
             <div class="content">
                 <div class="content-details">
                     <h2>Seat configuration</h2>
+                    <div class="main-container">
+                        <div class="container">
+                            <div class="vehicle-container">
+                                <label for="vehicle">Select Vehicle</label>
+                                <select name="vehicle" id="vehicle">
+                                    <option value="750"> 14 Seater</option>
+                                    <option value="850"> 11 Seater</option>
+                                </select>
+                            </div>
+                            
+                            <div class="seating-container">
+                                <div class="row">
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                    <div class="seat driver" title="Driver's seat"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                </div>
+                                <div class="row last">
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                    <div class="seat"></div>
+                                </div>
+                                <div class="summary">
+                                    <p>You have selected <span class="bold" id="count">0</span> seats, total price is Ksh <span class="bold" id="total">0</span> </p>
+                                </div>
+                            </div>
+                            <ul class="showcase-container">
+                                <li>
+                                    <div class="seat sold"></div>
+                                    <small>Sold</small>
+                                </li>
+                                <li>
+                                    <div class="seat available"></div>
+                                    <small>Available</small>
+                                </li>
+                                <li>
+                                    <div class="seat selected"></div>
+                                    <small>Selected</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="content-details">
-                    <p>booking details and payment</p>
-                    <div class="bus-seating">
-                        <p>seating configuration</p>
+                    <h2>Trip Details</h2>
+                    <div class="details-content">
+                        <div class="trip-info">
+                            <div>
+                                <label for="departure">Departure:</label>
+                                <span class="depart"></span>
+                            </div>
+                            <div>
+                                <label for="arrive">Destination:</label>
+                                <span class="destination"></span>
+                            </div>
+                            <div>
+                                <label for="pickup">Pickup Point:</label>
+                                <span class="pick-up"></span>
+                            </div>
+                            <div>
+                                <label for="time">Time:</label>
+                                <span class="time"></span>
+                            </div>
+                            <div class="dates">
+                                <div class="date">
+                                    <label for="date-go">Departure Date:</label>
+                                    <span class="date-go"></span>
+                                </div>
+                                <div class="date">
+                                    <label for="date-come">Return Date:</label>
+                                    <span class="date-come"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="ticket">Ticket Price (Ksh):</label>
+                                <span class="ticket-price"></span>
+                            </div>
+                            <div class="user-seats">
+                                <div class="seat-info">
+                                    <label for="seats-b">Seats Booked:</label>
+                                    <span class="seats-booked"></span>
+                                </div>
+                                <div class="seat-info">
+                                    <label for="seats-no">Seat Number(s):</label>
+                                    <span class="seat-number"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="vehicle">Vehicle Booked:</label>
+                                <span class="vehicle-plate"></span>
+                            </div>
+                            <div class="trip-buttons">
+                                <button type="button" class="trip-btns" id="edit">Edit details</button>
+                                <button type="button" class="trip-btns" id="confirm">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-content extra-pay">
+                        <h3>Payment section</h3>
+                        <div class="prompt">
+                            <div class="prompt-content">
+                                <p>Enter Mpesa phone number to receive payment prompt:</p>
+                                <div>
+                                    <label for="phone">Phone Number: </label>
+                                     <input type="tel" name="no" id="phone-no" class="phone-no" placeholder="0700000000">
+                                </div>
+                                <div>
+                                    <label for="amount">Amount to be paid (Ksh): </label>
+                                    <span class="ticket-price"></span>
+                                </div>
+                                <div class="prompt-btn">
+                                    <button type="button" class="trip-btns" id="prompt-call">Send prompt</button>
+                                </div>
+                                <p>Didn't receive prompt, <button type="button" class="manual-info" id="pay-manual">Click here</button></p>
+                            </div>
+                        </div>
+                        <div class="manual-pay">
+                            <div>
+                                <label for="till">Till Number: </label>
+                                <span class="till-no">521562</span>
+                            </div>
+                            <div>
+                                <label for="amount">Amount to be paid (Ksh): </label>
+                                <span class="ticket-price"></span>
+                            </div>
+                            <div>
+                                <label for="ref">Mpesa Refer Number: </label>
+                                <input type="tel" name="no" id="ref-no" class="pay-ref-no" placeholder="A1D51F5F4G">
+                            </div>
+                            <div class="prompt-btn">
+                                <button type="button" class="trip-btns" id="validate">Validate</button>
+                            </div>
+                            <p>Send prompt, <button type="button" class="manual-info" id="pay-prompt">Click here</button></p>
+                        </div>
+                    </div>
+                    <div class="details-content extra-ticket">
+                        <h3>Ticket download</h3>
+                        <div class="ticket-content">
+                            <div class="ticket-left">
+                                <div class="ticket-display"></div>
+                                <div class="ticket-download">
+                                    <button type="button" class="trip-btns" id="t-download">Download Ticket</button>
+                                </div>
+                            </div>
+                            <div class="ticket-left">
+                                <h4>Kind Reminder</h4>
+                                <p>Rout-Ing and partner saccos are not liable for ticket refunds if you miss the vehicle you booked. After payment, the driver will call you on departure to verify pickup stop kindly keep time.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
+    
     <footer>
         <div class="footer-more">
             <div class="more-subs">
@@ -85,20 +249,20 @@
                     <img src="Images/_337a0b08-c3e3-40a1-95f6-a3afe7c619af.jpeg" alt="" class="logo-img">
                 </div>
                 <div class="footer-logo">
-                    <a href="#"> <h2 class="footer-title">Rout-Ing</h2> </a>
+                    <a href="index.html"> <h2 class="footer-title">Rout-Ing</h2> </a>
                 </div>
             </div>
             <div class="more-subs">
                 <div class="subs-links">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#faqs">faqs</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Get your Ticket</a></li>
-                        <li><a href="#contact">My booking</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#faqs">faqs</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="booking.html">Get your Ticket</a></li>
+                        <li><a href="booked.html">My booking</a></li>
                     </ul>
-                   
+                    
                 </div>
             </div>
             <div class="more-subs">
@@ -111,7 +275,7 @@
                         <li><a href="#">Nyakati Sacco</a></li>
                         <li><a href="#">Prestige Cabs</a></li>
                     </ul>
-                   
+                    
                 </div>
             </div>
             <div class="more-subs">
