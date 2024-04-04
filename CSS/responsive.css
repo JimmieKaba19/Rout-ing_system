@@ -299,6 +299,11 @@
         gap: 5px;
     }
 
+    .trip-info {
+        width: auto;
+        padding: 0;
+    }
+
     .trip-buttons {
         flex-direction: column;
         justify-content: center;
