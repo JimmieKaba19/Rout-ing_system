@@ -286,10 +286,18 @@
     .content {
         flex-direction: column;
     }
+
+    .confirm-content {
+        padding: 20px;
+    }
 }
 
 @media screen and (max-width: 750px) {
     .content {
+        padding: 0;
+    }
+
+    .confirm-content {
         padding: 0;
     }
     
@@ -300,7 +308,7 @@
     }
 
     .trip-info {
-        width: auto;
+        width: 500px;
         padding: 0;
     }
 
@@ -315,5 +323,15 @@
 @media screen and (max-width: 600px) {
     .ticket-content {
         flex-direction: column;
+    }
+
+    .trip-info {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .trip-info {
+        width: 300px;
     }
 }
