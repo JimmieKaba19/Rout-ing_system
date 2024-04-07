@@ -3,6 +3,25 @@ addEventListener("contextmenu", (e) => {
     //e.preventDefault();
 });
 
+//toggle dark and light mode
+
+const switchTheme = document.querySelector(".checkbox");
+const darkIcon = document.querySelector(".dark-icon");
+const lightIcon = document.querySelector(".light-icon");
+const body = document.querySelector("body");
+switchTheme.addEventListener("change", () => {
+    let element = document.body;
+    element.classList.toggle("dark");
+    if(body.classList == "dark"){
+        lightIcon.style.display = "none";
+        darkIcon.style.display = "block";
+    } else {
+        lightIcon.style.display = "block";
+        darkIcon.style.display = "none";
+
+    }
+});
+
 //query selectors
 const open = document.querySelector(".open-form");
 const form = document.querySelector(".form-section");
@@ -60,18 +79,3 @@ subFaq.forEach((button) => {
         });
     });
 });
-
-// faq.addEventListener("click", (event) => {
-//     //alert("clicked");
-//     let target = event.target;
-//     switch(target.id){
-//         case "booking":
-//             alert("Clicked booking");
-//             break;
-//         case "member":
-//             alert("clicked member");
-//             break;
-//     };
-
-//     //subFaqs.style.display = "block";
-// });
