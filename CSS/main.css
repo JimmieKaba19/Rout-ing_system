@@ -35,17 +35,17 @@
 .hero-left h1{
     font-size: 48px;
     font-weight: 900;
-    color: #1f2937;
+    color: var(--color-secondary);
     width: 600px;
 }
 
 .hero-section span {
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 .hero-left p {
     font-size: 18px;
-    color: #f9faf8;
+    color: var(--color-primary);
     width: 600px;
     margin-bottom: 30px;
 }
@@ -53,22 +53,22 @@
 .hero-btn {
     padding: 16px 32px;
     font-size: 18px;
-    border: 2px solid #166466;
+    border: 2px solid var(--color-success);
     border-radius: 10px;
-    color: #f9faf8;
-    background-color: #166466;
+    color: var(--color-primary);
+    background-color: var(--color-success);
     transition: 400ms;
 }
 
 .hero-btn:hover {
     background-color: transparent;
-    color: #f9faf8;
-    border: 2px solid #3882f6;
+    color: var(--color-primary);
+    border: 2px solid var(--color-blue);
 }
 
 .booking-form {
     padding: 20px;
-    background-color: #f9faf8;
+    background-color: var(--color-primary);
     border-radius: 5px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .boundary {
-    border: 2px solid #166466;
+    border: 2px solid var(--color-success);
 }
 
 .form-content {
@@ -89,21 +89,21 @@
 }
 
 .form-content label {
-    color: #1f2937;
+    color: var(--color-secondary);
     font-size: 20px;
     padding: 5px;
     margin-top: 5px;
 }
 
 .form-content label span{
-    color: #1f2937;
+    color: var(--color-secondary);
     font-size: 14px;
 }
 
 .form-content input {
     padding: 15px 30px;
     font-size: 18px;
-    color: #166466;
+    color: var(--color-success);
     border-radius: 5px;
     border: none;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
@@ -111,15 +111,15 @@
 
 .form-content input[type="submit"] {
     margin-top: 40px;
-    color: #f9faf8;
-    background-color: #3882f6;
-    border: 2px solid #3882f6;
+    color: var(--color-primary);
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-blue);
     transition: 400ms;
 }
 
 .form-content input[type="submit"]:hover {
     background-color: transparent;
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 .steps-section {
@@ -137,12 +137,12 @@
 
 .steps-section h1 {
     text-align: center;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .step {
-    background-color: #166466;
-    color: #f9faf8;
+    background-color: var(--color-success);
+    color: var(--color-primary);
     padding: 20px;
     width: 300px;
     
@@ -162,28 +162,28 @@
 }
 
 .step.select {
-    background-color: #1f2937;
+    background-color: var(--color-secondary);
 }
 
 .step.pay {
-    background-color: #3882f6;
+    background-color: var(--color-blue);
 }
 
 .step.pick {
-    background: #f9faf8;
-    color: #1f2937;
+    background: transparent;
+    color: var(--color-secondary);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .destination-section {
     display: flex;
     flex-direction: column;
-    background-color: #f9faf8;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sub-title {
     text-align: center;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .sub-destination-section {
@@ -208,14 +208,14 @@
     position: absolute;
     bottom: 15px;
     left: 15px;
-    color: #f9faf8;
+    color: var(--color-primary);
 }
 
 .sub-right-section {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    border: 1px solid #1f2937;
+    border: 1px solid var(--color-secondary);
 }
 
 .about-section {
@@ -224,7 +224,7 @@
 
 .about-section h1 {
     text-align: center;
-    color: #166466;
+    color: var(--color-success);
     margin: 0;
 }
 
@@ -246,17 +246,18 @@
 }
 
 .about-subs h3 {
-    color: #166466;
+    color: var(--color-success);
     margin: 0;
 }
 
 .about-subs p{
     font-size: 18px;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .about-subs-img {
     width: 400px;
+    border-radius: 50px;
 }
 
 .about-sub {
@@ -289,11 +290,11 @@
 
 .about-left h2 {
     text-align: center;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .about-left p {
-    color: #1f2937;
+    color: var(--color-secondary);
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -308,14 +309,14 @@
 
 .sub-image {
     width: 60px;
-    background-color: #166466;
+    background-color: var(--color-success);
     padding: 15px;
     border-radius: 10px;
     box-shadow:  0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
 .sub-image.odd{
-    background-color: #f9faf8;
+    background-color: var(--color-primary);
 }
 
 .content-image {
@@ -323,18 +324,22 @@
 }
 
 .sub-info h4 {
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .sub-info h4 span {
-    color: #166466;
+    color: var(--color-success);
     margin-bottom: 10px;
 }
 
 .sub-info p {
     font-size: 16px;
-    color: #1f2937;
+    color: var(--color-secondary);
     font-weight: 500;
+}
+
+.about-image {
+    border-radius: 50px;
 }
 
 .loyalty {
@@ -346,25 +351,25 @@
 }
 
 .loyalty h3 {
-    color: #166466;
+    color: var(--color-success);
     margin: 0;
 }
 
 .loyalty p {
     font-size: 18px;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .loyalty span {
-    color: #166466;
+    color: var(--color-success);
     text-decoration: underline;
 }
 
 .loyalty-btn {
     padding: 15px 30px;
-    background-color: #3882f6;
-    border: 2px solid #3882f6;
-    color: #f9faf8;
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-blue);
+    color: var(--color-primary);
     font-size: 20px;
     border-radius: 10px;
     align-self: center;
@@ -372,19 +377,19 @@
 }
 
 .loyalty-btn:hover {
-    color: #3882f6;
+    color: var(--color-blue);
     background-color: transparent;
 }
 
 .faqs-section {
-    background-color: #f9faf8;
     display: flex;
     flex-direction: column;
     padding: 10px 50px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .faqs-title {
-    color: #166466;
+    color: var(--color-success);
     text-align: center;
 }
 
@@ -398,7 +403,7 @@
 }
 
 .sub-content-title {
-    color: #1f2937;
+    color: var(--color-secondary);
     margin: 5px;
     cursor: pointer;
 }
@@ -419,15 +424,15 @@
 }
 
 .sub-faqs-top h4 {
-    color: #1f2937;
+    color: var(--color-secondary);
     cursor: pointer;
     padding: 5px;
 }
 
 .sub-faqs-top h4 span {
-    color: #3882f6;
-    background-color: #f9faf8;
-    border: 2px solid #3882f6;
+    color: var(--color-blue);
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-blue);
     border-radius: 50px;
     padding: 3px 6px;
     margin-right: 3px;
@@ -435,7 +440,7 @@
 
 .sub-faqs-bottom {
     margin-top: 0px;
-    background-color: #f9faf8;
+    background-color: var(--color-primary);
     padding: 5px 10px;
     line-height: 20px;
     border-radius: 10px;
@@ -460,7 +465,7 @@
 }
 
 .contact-title{
-    color: #166466;
+    color: var(--color-success);
     margin: 0;
     text-align: center;
 }
@@ -474,11 +479,11 @@
 }
 
 .left-title {
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .contact-info {
-    color: #1f2937;
+    color: var(--color-secondary);
     font-size: 18px;
     text-wrap: wrap;
 }
@@ -509,7 +514,7 @@
     font: 16px;
     margin: 0;
     margin-top: 4px;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .c-info {
@@ -528,7 +533,7 @@
 }
 
 .c-info-link:hover{
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 .contact-right {
@@ -548,15 +553,15 @@
 
 .contact-form-info {
     font-size: 18px;
-    color: #1f2937;
+    color: var(--color-secondary);
     margin: 0;
 }
 
 .open-form {
     padding: 15px 30px;
     margin-top: 20px;
-    background-color: #3882f6;
-    color: #f9faf8;
+    background-color: var(--color-blue);
+    color: var(--color-primary);
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -591,14 +596,14 @@
     display: flex;
     /* justify-content: space-between; */
     gap: 140px;
-    color: #166466;
+    color: var(--color-success);
     font-size: 18px;
     font-weight: bold;
 }
 
 .input-fields{
     margin-top: 5px;
-    color: #166466;
+    color: var(--color-success);
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -607,7 +612,7 @@
 
 .first-name, .second-name {
     padding: 10px;
-    color: #166466;
+    color: var(--color-success);
     background-color: white;
     font-size: 16px;
     border-radius: 10px;
@@ -623,7 +628,7 @@
 
 .contact-details input{
     border-radius: 10px;
-    color: #166466;
+    color: var(--color-success);
     border: none;
     padding: 10px;
     font-size: 16px;
@@ -633,7 +638,7 @@
 
 .contact-details textarea {
     border-radius: 10px;
-    color: #166466;
+    color: var(--color-success);
     border: none;
     padding: 5px;
     font-size: 16px;
@@ -642,7 +647,7 @@
 
 .contact-details label{
     font-weight: bold;
-    color: #166466;
+    color: var(--color-success);
     font-size: 18px;
     margin-top: 5px;
 }
@@ -656,8 +661,8 @@
 .form-submit {
     padding: 15px 30px;
     margin-top: 20px;
-    background-color: #3882f6;
-    color: #f9faf8;
+    background-color: var(--color-blue);
+    color: var(--color-primary);
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -666,19 +671,6 @@
 }
 
 .form-submit:hover {
-    color: #f9faf8;
-    background-color: #166466;
-}
-
-.payment-modes {
-    background-color: #f9faf8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.payment-mode {
-    width: 70px;
-
+    color: var(--color-primary);
+    background-color: var(--color-success);
 }

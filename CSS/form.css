@@ -7,12 +7,12 @@ body {
     display: flex;
     justify-content: space-evenly;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 h1, p{
     text-align: center;
-    color: #1f2937;
+    color: var(--color-secondary);
     margin: 5px;
 }
 .titles{
@@ -23,11 +23,11 @@ h1, p{
     padding: 10px;
 }
 .login-btn, .signup-btn{
-    background-color: #f7f9fb;
+    background-color: var(--color-primary);
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 5px;
-    color: #1f2937;
+    color: var(--color-secondary);
     cursor: pointer;
     transition: 400ms;
     border: none;
@@ -35,11 +35,11 @@ h1, p{
 
 .titles #login:hover,
 .titles #signup:hover {
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 .form-title {
-    border: 1px solid #166466;
+    border: 1px solid var(--color-success);
 }
 
 .form-content {
@@ -60,7 +60,7 @@ h1, p{
 }
 
 .login-form {
-    background-color: #f7f9fb;
+    background-color: var(--color-primary);
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -75,17 +75,17 @@ h1, p{
 }
 
 .login-form label {
-    color: #1f2937;
+    color: var(--color-secondary);
     padding: 15px;
     font-size: 20px;
-    background-color: #f7f9fb;
+    background-color: var(--color-primary);
 }
 
 .login-form input {
     padding: 15px 30px;
     font-size: 18px;
-    color: #166466; 
-    background-color: #fff;
+    color: var(--color-success); 
+    background-color: var(--color-white);
     margin-bottom: 15px;
     border: none;
     border-radius: 10px;
@@ -135,12 +135,12 @@ h1, p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #f7f9fb;
+    border: 1px solid var(--color-primary);
     padding: 15px;
 }
 
 .login-form input[type="submit"]{
-    background-color: #166466;
+    background-color: var(--color-success);
     padding: 15px 30px;
     color: white;
     font-size: 18px;
@@ -150,8 +150,8 @@ h1, p{
 }
 
 .login-form input[type="submit"]:hover {
-    background-color: #3882f6;
-    color: #f7f9fb;
+    background-color: var(--color-blue);
+    color: var(--color-primary);
 }
 
 .form-submit .pword-reset{
@@ -161,11 +161,11 @@ h1, p{
 }
 
 .form-submit .pword-reset:hover {
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 h4 {
-    border-bottom: 2px solid #1f2937;
+    border-bottom: 2px solid var(--color-secondary);
 }
 
 .other-forms {
@@ -173,7 +173,7 @@ h4 {
     align-items: center;
     justify-content: space-evenly;
     gap: 15px;
-    background-color: #fff;
+    background-color: var(--color-white);
     padding: 15px;
     border-radius: 10px;
 }
@@ -187,12 +187,12 @@ h4 {
 }
 
 .option-links:hover {
-    background-color: #f7f9fb;
+    background-color: var(--color-primary);
     box-shadow: 0  3px 15px rgba(0, 0, 0, 0.15)
 }
 
 .signup-form {
-    background-color: #f7f9fb;
+    background-color: var(--color-primary);
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -211,16 +211,16 @@ h4 {
 }
 
 .signup-form label {
-    color: #1f2937;
+    color: var(--color-secondary);
     font-size: 20px;
-    background-color: #f7f9fb;
+    background-color: var(--color-primary);
 }
 
 .signup-form input {
     padding: 15px 30px;
     font-size: 18px;
-    color: #166466; 
-    background-color: #fff;
+    color: var(--color-success); 
+    background-color: var(--color-white);
     margin-bottom: 15px;
     border: none;
     border-radius: 10px;
@@ -236,7 +236,7 @@ h4 {
 }
 
 .signup-form input[type="submit"]{
-    background-color: #166466;
+    background-color: var(--color-success);
     padding: 15px 30px;
     color: white;
     font-size: 18px;
@@ -246,8 +246,8 @@ h4 {
 }
 
 .signup-form input[type="submit"]:hover {
-    background-color: #3882f6;
-    color: #f7f9fb;
+    background-color: var(--color-blue);
+    color: var(--color-primary);
 }
 
 .signup-form input[type="checkbox"] {
@@ -268,7 +268,7 @@ h4 {
 }
 
 .form-terms a:hover {
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 @media screen and (max-width: 992px) {
@@ -294,11 +294,11 @@ h4 {
 
     h1, p{
         text-align: center;
-        color: #fff;
+        color: var(--color-white);
     }
 
     .form-terms p{
-        color: #1f2937;
+        color: var(--color-secondary);
     }
 
     .other-forms {
@@ -335,10 +335,10 @@ h4 {
 
     h1, p{
         text-align: center;
-        color: #fff;
+        color: var(--color-white);
     }
 
     .form-terms p{
-        color: #1f2937;
+        color: var(--color-secondary);
     }
 }

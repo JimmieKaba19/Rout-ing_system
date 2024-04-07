@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
-    background-color: #1f2937;
+    background-color: var(--color-secondary);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
     z-index: 100;
 }
@@ -20,7 +20,7 @@
 
 .header-right {
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
 ul {
@@ -33,21 +33,101 @@ a {
     text-decoration: none;
     font-weight: 600;
     padding: 15px;
-    color: #f7f9fb;
+    color: var(--color-primary);
     font-size: 18px;
     border-radius: 10px;
     transition: 400ms;
 }
 
 ul a:hover {
-    color: #3882f6;
+    color: var(--color-blue);
     padding: 15px;
 }
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg-light);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-blue);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--color-bg-dark);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-blue);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+    border: 1px solid var(--color-blue);
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .d-m {
+    position: relative;
+  }
+
+  .light-icon {
+    position: absolute;
+    height: 26px;
+    top: 6px;
+    left: 6px;
+  }
+
+  .dark-icon {
+    position: absolute;
+    height: 24px;
+    right: 8px;
+    top: 7px;
+    display: none;
+  }
+
 .login {
-    background-color: #1f2937;
-    border: 1px solid #1f2937;
-    color: white;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
     padding: 15px 30px;
     border-radius: 10px;
     font-size: 18px;
@@ -56,7 +136,7 @@ ul a:hover {
 }
 
 .login:hover {
-    background-color: white;
-    color: #1f2937;
-    border: 1px solid #1f2937;
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
 }

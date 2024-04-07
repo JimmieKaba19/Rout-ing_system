@@ -1,7 +1,7 @@
 .search-alert {
     padding: 5px 15px;
-    background-color: #3aafa9;
-    color: #feffff;
+    background-color: var(--color-alert);
+    color: var(--color-white);
     display: none;
 }
 
@@ -21,18 +21,18 @@
 .book-content h1, h2, h3, p {
     margin: 0;
     text-align: center;
-    color: #1f2937;
+    color: var(--color-secondary);
 }
 
 .book-content h4 {
     font-weight: normal;
     margin: 5px;
-    color: #166466;
+    color: var(--color-success);
     font-size: 14px;
 }
 
 .header-form {
-    background-color: #1f2937;
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,16 +53,16 @@
 }
 
 .middle {
-    border: 2px solid #f9faf8;
+    border: 2px solid var(--color-primary);
 }
 
 .header-form label {
-    color: #f9faf8;
+    color: var(--color-primary);
     font-size: 16px;
 }
 
 .header-form label span{
-    color: #f9faf8;
+    color: var(--color-primary);
     font-size: 12px;
 }
 
@@ -70,7 +70,7 @@
     margin-right: 10px;
     padding: 10px 15px;
     font-size: 18px;
-    color: #166466;
+    color: var(--color-success);
     border-radius: 5px;
     border: none;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
@@ -83,9 +83,9 @@
 }
 
 .form-search input[type="submit"] {
-    color: #f9faf8;
-    background-color: #3882f6;
-    border: 2px solid #3882f6;
+    color: var(--color-primary);
+    background-color: var(--color-blue);
+    border: 2px solid var(--color-blue);
     transition: 400ms;
     margin-top: 10px;
     width: 100%;
@@ -93,17 +93,16 @@
 
 .form-search input[type="submit"]:hover {
     background-color: transparent;
-    color: #3882f6;
+    color: var(--color-blue);
 }
 
 /* available trips for users search */
 .available-trips {
-    background-color: #f9faf8;
     padding: 20px;
     gap: 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
 
 .boarding-current {
@@ -112,7 +111,7 @@
     padding: 20px;
     justify-content: center;
     align-items: center;
-    border: 2px solid #1f2937;
+    border: 2px solid var(--color-secondary);
     border-radius: 5px;
     display: none;
 }
@@ -122,7 +121,7 @@
 }
 
 .boarding-content {
-    border-right: 2px solid #166466;
+    border-right: 2px solid var(--color-success);
     padding: 5px;
 }
 
@@ -131,7 +130,7 @@
 }
 
 .boarding-content span {
-    color: green;
+    color: var(--color-success);
 }
 
 .content-info {
@@ -141,28 +140,26 @@
 .book-ticket{
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #166466;
-    color: #f9faf8;
+    background-color: var(--color-success);
+    color: var(--color-primary);
     border: none;
     border-radius: 5px;
     transition: 400ms ease-in-out;
 }
 
 .book-ticket:hover {
-    background-color: #3882f6;
+    background-color: var(--color-blue);
 }
 
 /* related trips info */
 .related-trips {
-    background-color: #f9faf8;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
 .related-current {
-    border: 1px solid #f9faf8;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -172,7 +169,6 @@
 }
 
 .related-routes{ 
-    background-color: #f9faf8;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -184,7 +180,7 @@
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    border:2px solid #166466;
+    border:2px solid var(--color-success);
     padding: 10px;
 }
 
