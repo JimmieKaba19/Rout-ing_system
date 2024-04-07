@@ -409,7 +409,6 @@
 }
 
 .sub-faqs {
-    background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -440,11 +439,10 @@
 
 .sub-faqs-bottom {
     margin-top: 0px;
-    background-color: var(--color-primary);
     padding: 5px 10px;
     line-height: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 5px;
     display: none;
 }
@@ -522,6 +520,10 @@
     margin: 0;
     margin-top: 4px;
     line-height: 20px;
+}
+
+.c-info a {
+    color: var(--color-blue);
 }
 
 .c-info-link{

@@ -65,7 +65,7 @@
         position: absolute;
         right: 0;
         top: 78px;
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         /* padding-top: 60px; */
@@ -117,7 +117,7 @@
   @media screen and (max-width: 750px) {
     .hero-section {
         padding: 15px 30px;
-        height: 60vh;
+        height: 80vh;
     }
 
     .hero-left, .hero-right {
@@ -203,6 +203,10 @@
     .loyalty {
         padding: 0;
     }
+
+    .contact-right {
+        padding: 0;
+    }
   }
 
   /* smallest screens */
@@ -242,6 +246,36 @@
 
     .footer-more {
         flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+    .hero-left h1 {
+        font-size: 26px;
+    }
+
+    .steps-section h1 {
+        font-size: 25px;
+    }
+
+    .destination-section h1 {
+        font-size: 25px;
+    }
+
+    .about-section h1{
+        font-size: 25px;
+    }
+
+    .about-section h2 {
+        font-size: 23px;
+    }
+
+    .faqs-section h1 {
+        font-size: 25px;
+    }
+
+    .contact-setion h1 {
+        font-size: 25px;
     }
   }
 
