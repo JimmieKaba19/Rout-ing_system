@@ -18,17 +18,23 @@
 <body>
     <main class="form-body">
         <div class="form-content left">
-            <img src="Images/1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpg" alt="form background image" class="form-image">
+            <div class="hero-left">
+                <h1>Forget about waiting at the bus stop, ride from <span>wherever</span> you are.</h1>
+                <p class="sub-hero">
+                    Charter with us for a safe <span>adventure</span> filled Journey. 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nemo saepe reiciendis dolore alias doloremque pariatur consequatur consequuntur impedit rerum.
+                </p>
+            </div>
         </div>
         <div class="form-content right">
             <h1>Welcome back!</h1>
             <p>Login to continue or Signup if you are new.</p>
-            <div class="titles">
-                <button type="button" class="login-btn" id="login">Login</button>
-                <div class="form-title"></div>
-                <button type="button" class="signup-btn" id="signup">Signup</button>
-            </div>
             <div class="login-form">
+                <div class="titles">
+                    <button type="button" class="login-btn" id="login">Login</button>
+                    <div class="form-title"></div>
+                    <button type="button" class="signup-btn" id="signup">Signup</button>
+                </div>
                 <form action="" method="get" id="login-f">
                     <div class="u-name">
                         <label for="username" class="u-name">
@@ -39,25 +45,22 @@
                     <div class="p-word">
                         <label for="password">Password</label>                            
                         <input type="password" name="password" id="" class="password" placeholder="password" autocomplete="off">
-                        <img src="Images/visible-pword.png" alt="password visibility" class="visible">
-                        <img src="Images/hide-pword.png" alt="password visibility" class="hide">
+                        <p class="password-view"><input type="checkbox" name="password" id="" class="chck-pwd"> view password</p>
                     </div>
                     <div class="form-submit">
                         <input 
                         type="submit"
                         class="login-btn" value="Login">
                         <a href="#" class="pword-reset">Forgot your password?</a>
-                        <div class="other-forms">
-                            <h4>Or login with</h4>
-                            <div class="form-options">
-                                <a href="#" class="option-links"><img src="Images/google.png" alt="google login option" class="other-forms-images"></a>
-                                 <a href="#" class="option-links"><img src="Images/facebook.png" alt="facebook login option" class="other-forms-images"></a>
-                            </div>
-                        </div>
                     </div>
                 </form>
             </div>
             <div class="signup-form">
+                <div class="titles">
+                    <button type="button" class="login-btn" id="login">Login</button>
+                    <div class="form-title"></div>
+                    <button type="button" class="signup-btn" id="signup">Signup</button>
+                </div>
                 <form action="" method="get" id="signup-f">
                     <div class="contact-details">
                         <label for="f-name" class="f-name">
@@ -70,19 +73,13 @@
                                 Password
                             </label>
                             <input type="password" name="sname" id="" class="p-word-sign" placeholder="password">
-                            <img src="Images/visible-pword.png" alt="password visibility" class="visible">
-
                             <label for="password">
                                 Confirm password
                             </label>
                             <input type="password" name="sname" id="" class="p-word-confirm" placeholder="confirm password">
-                            <img src="Images/hide-pword.png" alt="password visibility" class="hide">
+                            <p class="password-view"><input type="checkbox" name="password" id="" class="chck-pwd"> view password</p>
                             <p class="red-notice">*Passwords do not match</p>
                         </div>
-<!-- 
-                        <label for="county">County</label>
-                        <input type="text" name="" id="" class="county" placeholder="nairobi"> -->
-
                         <label for="email">Email</label>
                         <input type="email" name="" id="" class="email" placeholder="johndoe@gmail.com">
 
@@ -110,7 +107,9 @@
                 <a href="#" class="footer-link">Terms & Conditions</a>
             </div>
             <div class="footer-text">
-                Copyright Kaba Inc &#064; 2024 | all rights reserved. <i>Inspiration from Mi Vida</i>
+                <p>Copyright Kaba Inc &#064; 2024 | all rights reserved. 
+                    <br><span><i>Designed and Developed by Metro <small>Techsperts</small></i></span>
+                </p>
             </div>
         </div>
     </footer>
