@@ -1,9 +1,30 @@
 const forms = document.querySelectorAll("form");
+const pwordViews = document.querySelectorAll(".chck-pwd");
+
+pwordViews.forEach((pwordView) => {
+    pwordView.addEventListener("change" , () => {
+        alert("checker");
+    });
+});
 
 forms.forEach((form) => {
     form.addEventListener("submit", (e) => {
         //preventing default
         e.preventDefault();
+
+        //user data
+        // const formData = {
+        //     userName: document.querySelector(".user-name").value,
+        //     fullname: document.querySelector(".full-name").value,
+        //     passwordLogin: document.querySelector(".password").value,
+        //     passwordSign: document.querySelector(".p-word-sign").value,
+        //     confirmPassword: document.querySelector(".p-word-confirm").value,
+        //     email: document.querySelector(".email").value,
+        //     phoneNo: document.querySelector(".phone-no").value,
+        //     checkBox: document.querySelector(".checkbox"),
+        //     passwordMatch: document.querySelector(".red-notice"),
+        // }
+        // console.log(formData)
 
         //data
         let userName = document.querySelector(".user-name").value;
@@ -37,19 +58,20 @@ forms.forEach((form) => {
                 }
                 else {
                     alert("Welcome, kindly confirm email to continue.");
+                    const newUserInfo = {
+                        fullname: document.querySelector(".full-name").value,
+                        passwordSign: document.querySelector(".p-word-sign").value,
+                        confirmPassword: document.querySelector(".p-word-confirm").value,
+                        email: document.querySelector(".email").value,
+                        phoneNo: document.querySelector(".phone-no").value,
+                        checkBox: document.querySelector(".checkbox"),
+                    }
+                    console.log(newUserInfo);
                 }
                 break;
         }
 
     });
-});
-
-//visibility
-const visibility = document.querySelector(".visible");
-const hide = document.querySelector(".hide");
-
-visibility.addEventListener(("click"), () => {
-    alert("revealing");
 });
 
 const navBtns = document.querySelectorAll(".titles");

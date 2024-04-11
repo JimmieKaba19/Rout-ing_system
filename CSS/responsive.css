@@ -250,33 +250,93 @@
   }
 
   @media screen and (max-width: 450px){
-    .hero-left h1 {
-        font-size: 26px;
+    .body-content p{
+        font-size: 14px;
     }
 
-    .steps-section h1 {
-        font-size: 25px;
+    .navigation-items{ 
+        height: calc(45vh - 78px);
     }
 
-    .destination-section h1 {
-        font-size: 25px;
+    .navigation-items a {
+        font-size: 14px;
     }
 
-    .about-section h1{
-        font-size: 25px;
+    .body-content h1,
+    .book-content h1,
+    .booked h1 {
+        font-size: 20px;
     }
 
-    .about-section h2 {
-        font-size: 23px;
+    .body-content h2 {
+        font-size: 16px;
     }
 
-    .faqs-section h1 {
-        font-size: 25px;
+    .body-content h3 {
+        font-size: 14px;
     }
 
-    .contact-setion h1 {
-        font-size: 25px;
+    .body-content h4 {
+        font-size: 12px;
     }
+
+
+    .body-content button {
+        font-size: 14px;
+    }
+
+    .body-content a {
+        font-size: 14px;
+    }
+
+    .hero-left p,
+    .booked p {
+        font-size: 10px;
+    }
+
+    .booking-form {
+        width: 300px;
+    }
+
+    .form-content label,
+    .header-form label,
+    .booked label{
+        font-size: 12px;
+    }
+    
+    .form-content input,
+    .header-form input,
+    .booked input {
+        padding: 5px 10px;
+        font-size: 12px;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .booked button, 
+    .booked input[type="submit"] {
+        font-size: 10px;
+    }
+
+    .contact-article {
+        width: 250px;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+
+    .contact-details label, input {
+        font-size: 14px;
+    }
+
+    .more-subs h3 {
+        font-size: 14px;
+    }
+
+    .more-subs a {
+        font-size: 14px;
+    }
+
   }
 
   /* Booked */

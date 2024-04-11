@@ -14,14 +14,15 @@ bookingForm.addEventListener("submit", (e) => {
     
     let from = document.querySelector(".from").value.toLowerCase();
     let to = document.querySelector(".to").value.toLowerCase();
-    let date = document.querySelector(".date").value; //return date is optional hence only selecting D1
+    let date = document.querySelector(".date").value; 
+    let returnDate = document.querySelector(".r-date").value;//return date is optional
     let time = document.querySelector(".time").value;
     let pickUp = document.querySelector(".pickup").value;
-    
-    if(from === "" || to === "" || date === "" || time === "" || pickUp == "") {
-        alert("please fill in all the fields!");
-    } else if(window.location.href == "index.html") {
+
+    if(window.location.href == "index.html") {
         window.location.href = `booking.html`
+    } else if(from === "" || to === "" || date === "" || time === "" || pickUp == "") {
+        alert("please fill in all the fields!");
     } else if (from == "nanyuki" && to == "nairobi") {
         //search alert and submit search 
         alertArea.style.display = "block";
@@ -36,7 +37,7 @@ bookingForm.addEventListener("submit", (e) => {
             }
         });
 
-        // trip available
+        // trip available and redirect
         tripsAvailable.forEach(trip => {
             trip.style.display = "flex";
         });
@@ -47,9 +48,19 @@ bookingForm.addEventListener("submit", (e) => {
             });
         });
 
+        //collect user trip data for usage
+        const tripInfo = {
+            from: document.querySelector(".from").value.toLowerCase(),
+            to: document.querySelector(".to").value.toLowerCase(),
+            date: document.querySelector(".date").value, 
+            returnDate: document.querySelector(".r-date").value,
+            time: document.querySelector(".time").value,
+            pickUp: document.querySelector(".pickup").value,
+        }
+        console.log(tripInfo);
+
     } else {
         alert("Trip request currently unavailable!")
-        //`?from= ${from} to= ${to} date= ${date} time= ${time}`;
     }
 });
 

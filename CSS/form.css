@@ -1,18 +1,41 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .form-body {
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
     background-color: var(--color-white);
+    background: url('../Images/1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.hero-left h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--color-secondary);
+    width: 600px;
+}
+
+.hero-left span {
+    color: var(--color-blue);
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: var(--color-primary);
+    width: 600px;
+    margin-bottom: 30px;
 }
 
 h1, p{
     text-align: center;
-    color: var(--color-secondary);
+    color: var(--color-primary);
     margin: 5px;
 }
 .titles{
@@ -47,6 +70,12 @@ h1, p{
     padding: 30px;
 }
 
+.form-content.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .form-content.right{
     display: flex;
     flex-direction: column;
@@ -77,19 +106,18 @@ h1, p{
 .login-form label {
     color: var(--color-secondary);
     padding: 15px;
-    font-size: 20px;
+    font-size: 16px;
     background-color: var(--color-primary);
 }
 
 .login-form input {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
     color: var(--color-success); 
     background-color: var(--color-white);
     margin-bottom: 15px;
     border: none;
     border-radius: 10px;
-    width: 400px;
     box-shadow: 0  3px 15px rgba(150, 75, 75, 0.15)
 }
 
@@ -97,37 +125,6 @@ h1, p{
     position: relative;
     display: flex;
     flex-direction: column;
-}
-
-.visible{
-    position: absolute;
-    width: 20px;
-    right: 20px;
-    top: 70px;
-    cursor: pointer;
-}
-
-.hide{
-    position: absolute;
-    width: 20px;
-    right: 20px;
-    top: 70px;
-    display: none;
-    cursor:pointer;
-}
-
-.pass-word .visible{
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.pass-word .hide{
-    position: absolute;
-    top: 40px;
-    right: 120px;
-    cursor: pointer;
 }
 
 .form-submit {
@@ -143,7 +140,7 @@ h1, p{
     background-color: var(--color-success);
     padding: 15px 30px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     width: 400px;
     align-self: center;
     transition: 400ms ease-in-out;
@@ -157,6 +154,7 @@ h1, p{
 .form-submit .pword-reset{
     text-decoration: underline;
     font-size: 16px;
+    color: var(--color-secondary);
     transition: 400ms;
 }
 
@@ -166,29 +164,6 @@ h1, p{
 
 h4 {
     border-bottom: 2px solid var(--color-secondary);
-}
-
-.other-forms {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 15px;
-    background-color: var(--color-white);
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.other-forms-images {
-    width: 60px;
-}
-
-.option-links{
-    transition: 400ms ease-in-out;
-}
-
-.option-links:hover {
-    background-color: var(--color-primary);
-    box-shadow: 0  3px 15px rgba(0, 0, 0, 0.15)
 }
 
 .signup-form {
@@ -208,17 +183,17 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 10px;
 }
 
 .signup-form label {
     color: var(--color-secondary);
-    font-size: 20px;
-    background-color: var(--color-primary);
+    font-size: 16px;
 }
 
 .signup-form input {
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
     color: var(--color-success); 
     background-color: var(--color-white);
     margin-bottom: 15px;
@@ -239,7 +214,7 @@ h4 {
     background-color: var(--color-success);
     padding: 15px 30px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     width: 400px;
     align-self: center;
     transition: 400ms ease-in-out;
@@ -256,15 +231,25 @@ h4 {
     margin-top: 15px;
 }
 
+.password-view {
+    align-self: flex-start;
+    color: var(--color-secondary);
+}
+
 .form-terms {
     display: flex;
     align-items: center;
+}
+
+.form-terms p {
+    color: var(--color-secondary);
 }
 
 .form-terms a {
     font-size: 16px;
     padding: 0;
     text-decoration: underline;
+    color: var(--color-secondary);
 }
 
 .form-terms a:hover {
@@ -272,35 +257,71 @@ h4 {
 }
 
 @media screen and (max-width: 992px) {
+    body {
+        height: 100vh;
+    }
+
     .form-body {
         flex-direction: column;
         background: url('../Images/1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
         background-repeat: no-repeat;
+        height: 100vh;
     }
-
+    
     .form-content {
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        padding: 30px;
     }
-
+    
     .form-content.left {
         display: none;
     }
-
+    
     .form-content.right{
         background-color: transparent;
     }
 
+
+    .login-form,
+    .signup-form {
+        background-color: transparent;
+    }
+
+    .login-form input,
+    .signup-form input {
+        width: auto;
+    }
+    
     h1, p{
         text-align: center;
         color: var(--color-white);
     }
 
+    .login-form label,
+    .signup-form label {
+        background-color: transparent;
+        color: var(--color-primary);
+        font-size: 16px;
+    }
+
+    .form-submit {
+        border: none;
+    }
+    
     .form-terms p{
         color: var(--color-secondary);
     }
 
+    .form-submit .pword-reset{
+        color: var(--color-primary);
+    }    
+
+    .form-terms p, .form-terms a {
+        color: var(--color-primary);
+    }
+    
     .other-forms {
         flex-direction: column;
     }
@@ -310,35 +331,93 @@ h4 {
     .form-body {
         padding: 15px 30px;
     }
-
+    
     .form-content.left {
         display: none;
     }
-
-    .login-form,
+    
+    .login-form, 
     .signup-form {
-        display: none;
+        background-color: transparent;
     }
-
+    
     .login-form input,
     .signup-form input {
         padding: 15px 30px;
         font-size: 16px;
         width: auto;
     }
-
+    
     .login-form input[type="submit"],
     .signup-form input[type="submit"] {
         width: auto;
         font-size: 16px;
     }
-
+    
     h1, p{
         text-align: center;
         color: var(--color-white);
     }
-
+    
     .form-terms p{
         color: var(--color-secondary);
+    }
+}
+
+@media screen and (max-width : 450px) {
+    body {
+        height: 100vh;
+    }
+
+    .titles button{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .form-body {
+        padding: 15px 30px;
+        height: 100vh;
+    }
+    
+    .contact-details {
+        gap: 0;
+    }
+    
+    .login-form,
+    .signup-form {
+        padding: 10px;
+    }
+    
+    .login-form label,
+    .signup-form label {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    .login-form input,
+    .signup-form input {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .form-submit .pword-reset{
+        font-size: 14px;
+    }    
+
+    .form-terms p, .form-terms a {
+        font-size: 14px;
+        color: var(--color-primary);
+    }
+    
+    .foot a {
+        font-size: 10px;
+    }
+    
+    .footer-text p{
+        font-size: 10px;
+    }
+    
+    .footer-text p i {
+        font-size: 8px;
     }
 }

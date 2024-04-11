@@ -44,6 +44,11 @@ submitBooking.forEach((button) => {
                 alert("Fill in Your booking reference (Rout-no) to proceed");
             }else {
                 alert("Proceeding");
+                const emailConfirm = {
+                    email: document.querySelector(".email-check").value,
+                    bookingRef: document.querySelector(".booking-ref").value,
+                }
+                console.log(emailConfirm);
             }
             break;
             case "otp-send":
@@ -51,6 +56,10 @@ submitBooking.forEach((button) => {
                 alert("Fill in email to proceed");
             } else {
                 alert("Proceeding");
+                const emailOTP = {
+                    otpSend: document.querySelector(".email-otp").value,
+                }
+                console.log(emailOTP);
             }
             break;
         }
