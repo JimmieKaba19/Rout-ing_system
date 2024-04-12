@@ -233,7 +233,7 @@ h4 {
 
 .password-view {
     align-self: flex-start;
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .form-terms {
@@ -262,16 +262,16 @@ h4 {
     }
 
     .form-body {
-        flex-direction: column;
-        background: url('../Images/1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpg');
+        /* flex-direction: column;
+        background: url('../Images/_1f89ac5e-a90d-4790-8076-bb2af40f5c39.jpeg');
         background-size: 100% 100%;
         background-attachment: fixed;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
+        /* background-color: var(--color-secondary); */
         height: 100vh;
     }
     
     .form-content {
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         padding: 30px;
     }
     
@@ -287,6 +287,7 @@ h4 {
     .login-form,
     .signup-form {
         background-color: transparent;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
 
     .login-form input,
