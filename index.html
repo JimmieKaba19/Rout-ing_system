@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="CSS/booked.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/book.css">
     <script src="JS/script.js" defer></script>
     <script src="JS/user.js" defer></script>
     <script src="JS/book.js" defer></script>
@@ -86,25 +87,30 @@
             </div>
             <div class="hero-right">
                 <div class="booking-form">
-                    <form action="booking.html" method="get">
-                        <div class="form-contents">
-                            <div class="form-content">
-                                <label for="from">Leaving From:</label>
-                                <input type="text" class="from" name="from" placeholder="Departure">
-                                <label for="date">Travel Date:</label>
-                                <input type="date" class="date" name="date" placeholder="Travel Date">
-                                <label for="time">Time:</label>
-                                <input type="time" class="time" name="time" placeholder="time">
+                    <form action="booking.html" method="get" id="home-form">
+                        <div class="contents">
+                            <div class="form-header">
+                                <div class="form-info">
+                                    <label for="from">Leaving From:</label>
+                                    <input type="text" class="from" name="from" placeholder="Departure">
+                                    <label for="pickup">Pickup Point:</label>
+                                    <input type="text" class="pickup" name="pickup" placeholder="Pickup Point">
+                                    <label for="date">Travel Date:</label>
+                                    <input type="date" class="date" name="date" placeholder="Travel Date">
+                                </div>
+                                <div class="middle-index"></div>
+                                <div class="form-info">
+                                    <label for="to">Travelling To:</label>
+                                    <input type="text" class="to" name="to" placeholder="Destination">
+                                    <label for="time">Time:</label>
+                                    <input type="time" class="time" name="time" placeholder="time">
+                                    <label for="date">Return Date: <span>(Optional)</span></label>
+                                    <input type="date" class="r-date" name="date" placeholder="Return Date">
+                                    
+                                </div>
                             </div>
-                            <div class="boundary">
-
-                            </div>
-                            <div class="form-content">
-                                <label for="to">Travelling To:</label>
-                                <input type="text" class="to" name="to" placeholder="Destination">
-                                <label for="date">Return Date: <span>(Optional)</span></label>
-                                <input type="date" class="date" name="date" placeholder="Return Date">
-                                <input type="submit" value="Search">
+                            <div class="form-search">
+                                <input type="submit" class="submit-search" value="Search" id="home-page">
                             </div>
                         </div>
                     </form>
