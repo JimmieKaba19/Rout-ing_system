@@ -86,7 +86,7 @@ navBtns.forEach((btn) => {
         switch(target.id){
             case "login":
                 loginForm.style.display = "block";
-                loginBtn.setAttribute("style", "background-color: #3882f6; color: #fff;")
+                loginBtn.setAttribute("style", "background-color: #3882f6; color: #fff; text-decoration: underline")
                 signupForm.style.display = "none";
                 signupBtn.setAttribute("style", "background-color: #f7f9fb; color: #1f2937;")
                 break;
@@ -94,7 +94,7 @@ navBtns.forEach((btn) => {
                 loginForm.style.display = "none";
                 loginBtn.setAttribute("style", "background-color: #f7f9fb; color: #1f2937;")
                 signupForm.style.display = "block";
-                signupBtn.setAttribute("style", "background-color: #3882f6; color: #fff;")
+                signupBtn.setAttribute("style", "background-color: #3882f6; color: #fff; text-decoration: underline")
                 break;
         }
     });
